@@ -1,0 +1,46 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  cta?: { label: string; href: string };
+  backgroundImage?: string;
+}
+
+const { title, subtitle, cta, backgroundImage } = Astro.props;
+---
+
+<section class="relative min-h-[70vh] flex items-center overflow-hidden">
+  {backgroundImage && (
+    <div class="absolute inset-0">
+      <img
+        src={backgroundImage}
+        alt=""
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-[#0A0A0A]/75"></div>
+    </div>
+  )}
+
+  {!backgroundImage && (
+    <div class="absolute inset-0 bg-[#0A0A0A]"></div>
+  )}
+
+  <div class="relative container-default section-padding w-full">
+    <div class="max-w-3xl">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-white leading-tight mb-6">
+        {title}
+      </h1>
+      {subtitle && (
+        <p class="text-lg sm:text-xl text-[#C0C0C0] mb-8 max-w-2xl leading-relaxed">
+          {subtitle}
+        </p>
+      )}
+      {cta && (
+        <a href={cta.href} class="btn-primary text-lg px-8 py-4">
+          {cta.label}
+        </a>
+      )}
+    </div>
+  </div>
+</section>

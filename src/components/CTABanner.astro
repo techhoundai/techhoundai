@@ -1,0 +1,32 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+  buttonLabel?: string;
+  buttonHref?: string;
+}
+
+const {
+  title = "Ready to get started?",
+  subtitle = "Let's talk about what you're building.",
+  buttonLabel = "Schedule a Consultation",
+  buttonHref = "/contact",
+} = Astro.props;
+---
+
+<section class="bg-[#0A0A0A] border-t border-[#1A1A1A]">
+  <div class="container-default section-padding text-center">
+    <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white mb-4">
+      {title}
+    </h2>
+    <p class="text-lg text-[#999] mb-8 max-w-xl mx-auto">
+      {subtitle}
+    </p>
+    <a
+      href={buttonHref}
+      class="inline-flex items-center justify-center px-8 py-4 bg-gold text-[#0A0A0A] font-semibold rounded-lg hover:bg-gold-light transition-all text-lg"
+    >
+      {buttonLabel}
+    </a>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  icon: string;
+  items?: string[];
+  compact?: boolean;
+}
+
+const { title, description, icon, items, compact = false } = Astro.props;
+---
+
+<div class="card p-6 md:p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+  <div class="w-12 h-12 rounded-lg bg-gold/10 dark:bg-gold/20 flex items-center justify-center mb-4">
+    <svg class="w-6 h-6 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      {icon === "lucide:globe" && <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 100-18 9 9 0 000 18zm0-18c2.5 3 4 6.5 4 9s-1.5 6-4 9m0-18c-2.5 3-4 6.5-4 9s1.5 6 4 9m-9-9h18" />}
+      {icon === "lucide:smartphone" && <path stroke-linecap="round" stroke-linejoin="round" d="M7 2h10a1 1 0 011 1v18a1 1 0 01-1 1H7a1 1 0 01-1-1V3a1 1 0 011-1zm5 18h.01" />}
+      {icon === "lucide:zap" && <path stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />}
+      {icon === "lucide:search" && <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />}
+      {icon === "lucide:server" && <path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h16a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm0 10a2 2 0 012-2h16a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4zm4-8h.01M6 17h.01" />}
+      {icon === "lucide:palette" && <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-1 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-5.52-4.48-10-10-10zM6.5 13a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm3-4a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm3 4a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" />}
+    </svg>
+  </div>
+  <h3 class="text-xl font-heading font-semibold mb-3">{title}</h3>
+  <p class="text-secondary text-sm leading-relaxed mb-4">{description}</p>
+  {items && !compact && (
+    <ul class="space-y-2">
+      {items.map((item) => (
+        <li class="flex items-start gap-2 text-sm text-secondary">
+          <svg class="w-4 h-4 text-gold mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  )}
+</div>

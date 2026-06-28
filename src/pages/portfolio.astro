@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PortfolioCard from "../components/PortfolioCard.astro";
+import Testimonial from "../components/Testimonial.astro";
+import CTABanner from "../components/CTABanner.astro";
+import { projects, testimonials } from "../data/portfolio";
+---
+
+<BaseLayout
+  title="Portfolio"
+  description="See the websites, apps, and products TechHound has built. Real projects, real results."
+>
+  <section class="px-4 py-10 md:py-14 sm:px-6 lg:px-8 bg-[#FAFAF8] dark:bg-[#111111]">
+    <div class="container-default text-center">
+      <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-4">Our Work</h1>
+      <p class="text-secondary text-lg max-w-2xl mx-auto">
+        Real projects we've built for real businesses. Take a look.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {projects.map((project) => (
+          <PortfolioCard
+            title={project.title}
+            description={project.description}
+            url={project.url}
+            image={project.images[0]}
+            tags={project.tags}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- BotHound Feature -->
+  <section class="section-padding bg-[#FAFAF8] dark:bg-[#111111]">
+    <div class="container-default">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-sm font-medium text-gold dark:text-gold-light uppercase tracking-wide">Built by TechHound</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold mt-2 mb-4">Meet BotHound</h2>
+          <p class="text-secondary leading-relaxed mb-4">
+            BotHound is our AI-powered automation platform. It helps small businesses adopt AI into their daily workflows without needing a technical team.
+          </p>
+          <p class="text-secondary leading-relaxed mb-6">
+            Build multi-stage task pipelines, schedule automated runs, and track everything from a single dashboard. It's the kind of tool we build for our clients, now available to everyone.
+          </p>
+          <a href="/bothound" class="btn-primary">Learn More About BotHound</a>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg border border-[#E8E4DC] dark:border-[#1E1E1E]">
+          <img
+            src="/images/bothound1.png"
+            alt="BotHound bot builder interface showing task pipelines and run history"
+            class="w-full"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  {testimonials.length > 0 && (
+    <section class="section-padding">
+      <div class="container-default">
+        <h2 class="text-3xl font-heading font-bold mb-8 text-center">What Our Clients Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {testimonials.map((t) => (
+            <Testimonial quote={t.quote} name={t.name} company={t.company} />
+          ))}
+        </div>
+        <!-- TODO: Replace placeholder testimonials with real client reviews -->
+      </div>
+    </section>
+  )}
+
+  <CTABanner
+    title="Want to be our next success story?"
+    subtitle="Let's build something great together."
+  />
+</BaseLayout>

@@ -1,0 +1,110 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/services", label: "Services" },
+  { href: "/portfolio", label: "Portfolio" },
+  { href: "/process", label: "Process" },
+  { href: "/blog", label: "Blog" },
+  { href: "/contact", label: "Contact" },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-50 bg-white/95 dark:bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#E8E4DC] dark:border-[#1A1A1A]">
+  <nav class="container-default px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 md:h-20">
+      <a href="/" class="flex-shrink-0 flex items-center gap-2">
+        <img
+          src="/images/logo-dark.png"
+          alt="TechHound"
+          class="h-10 md:h-12 w-auto dark:hidden"
+        />
+        <img
+          src="/images/logo-light.png"
+          alt="TechHound"
+          class="h-10 md:h-12 w-auto hidden dark:block"
+        />
+        <span class="font-heading text-xl md:text-2xl font-bold tracking-tight text-gradient">TechHound</span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-1">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "px-3 py-2 text-sm font-medium rounded-lg transition-colors",
+              currentPath === link.href || (link.href !== "/" && currentPath.startsWith(link.href))
+                ? "text-gold dark:text-gold-light"
+                : "text-[#4A4A4A] dark:text-[#A0A0A0] hover:text-[#1A1A1A] dark:hover:text-[#F0F0F0]",
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <div class="flex items-center gap-2">
+        <ThemeToggle />
+        <a href="/contact" class="hidden md:inline-flex btn-primary text-sm">
+          Schedule a Consultation
+        </a>
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          class="lg:hidden p-2 rounded-lg text-[#4A4A4A] dark:text-[#A0A0A0] hover:bg-surface-light dark:hover:bg-surface-dark transition-colors"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path id="menu-open-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            <path id="menu-close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden pb-4">
+      <div class="flex flex-col gap-1">
+        {navLinks.map((link) => (
+          <a
+            href={link.href}
+            class:list={[
+              "px-3 py-2 text-sm font-medium rounded-lg transition-colors",
+              currentPath === link.href || (link.href !== "/" && currentPath.startsWith(link.href))
+                ? "text-gold dark:text-gold-light bg-surface-light dark:bg-surface-dark"
+                : "text-[#4A4A4A] dark:text-[#A0A0A0] hover:text-[#1A1A1A] dark:hover:text-[#F0F0F0] hover:bg-surface-light dark:hover:bg-surface-dark",
+            ]}
+          >
+            {link.label}
+          </a>
+        ))}
+        <a href="/contact" class="btn-primary text-sm mt-2 text-center">
+          Schedule a Consultation
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  function initMobileMenu() {
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const openIcon = document.getElementById("menu-open-icon");
+    const closeIcon = document.getElementById("menu-close-icon");
+
+    btn?.addEventListener("click", () => {
+      const isOpen = menu?.classList.toggle("hidden") === false;
+      btn.setAttribute("aria-expanded", String(isOpen));
+      openIcon?.classList.toggle("hidden", isOpen);
+      closeIcon?.classList.toggle("hidden", !isOpen);
+    });
+  }
+
+  initMobileMenu();
+  document.addEventListener("astro:after-swap", initMobileMenu);
+</script>

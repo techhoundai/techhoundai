@@ -1,0 +1,121 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+import Testimonial from "../components/Testimonial.astro";
+import CTABanner from "../components/CTABanner.astro";
+import { services } from "../data/services";
+import { testimonials } from "../data/portfolio";
+---
+
+<BaseLayout
+  title="Home"
+  description="TechHound is a Pittsburgh-based tech agency building premium websites, apps, and automations at prices that reflect the modern landscape. National reach, honest pricing."
+>
+  <Hero
+    title="Premium Software. Honest Pricing."
+    subtitle="We're a Pittsburgh-based tech agency building websites, apps, and automations for businesses across the country. AI changed how software gets built. We pass those savings to you."
+    cta={{ label: "Schedule a Consultation", href: "/contact" }}
+    backgroundImage="/images/pitt.png"
+  />
+
+  <!-- Services Overview -->
+  <section class="section-padding bg-[#FAFAF8] dark:bg-[#111111]">
+    <div class="container-default">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold mb-4">What We Build</h2>
+        <p class="text-secondary max-w-2xl mx-auto">
+          From marketing sites to mobile apps to custom automations. Whatever your business needs, we can build it.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {services.map((service) => (
+          <a href="/services" class="block">
+            <ServiceCard
+              title={service.title}
+              description={service.description}
+              icon={service.icon}
+              compact
+            />
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why TechHound -->
+  <section class="relative section-padding overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/images/background1.png" alt="" class="w-full h-full object-cover" loading="lazy" />
+      <div class="absolute inset-0 bg-[#0A0A0A]/85"></div>
+    </div>
+    <div class="relative container-default">
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white mb-6">Why TechHound?</h2>
+        <p class="text-lg text-[#C0C0C0] leading-relaxed">
+          The software industry has a pricing problem. AI tools have made development faster and more efficient than ever. But most agencies still charge like it's 2019. We don't.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-heading font-semibold text-white mb-2">Fair Pricing</h3>
+          <p class="text-[#999] text-sm leading-relaxed">
+            Our prices reflect the actual cost of building software today. Not what it cost five years ago. You get the same quality for less.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-heading font-semibold text-white mb-2">Modern Tools</h3>
+          <p class="text-[#999] text-sm leading-relaxed">
+            We use AI to work smarter and faster. That means quicker turnaround, fewer billable hours, and a better product for you.
+          </p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-full bg-gold/20 flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-heading font-semibold text-white mb-2">Real People</h3>
+          <p class="text-[#999] text-sm leading-relaxed">
+            You work directly with the people building your product. No layers of account managers. No getting lost in a queue.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  {testimonials.filter((t) => t.featured).length > 0 && (
+    <section class="section-padding">
+      <div class="container-default">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-heading font-bold mb-4">What Our Clients Say</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {testimonials
+            .filter((t) => t.featured)
+            .map((t) => (
+              <Testimonial quote={t.quote} name={t.name} company={t.company} />
+            ))}
+        </div>
+        <div class="text-center mt-8">
+          <a href="/portfolio" class="text-gold dark:text-gold-light font-medium hover:underline">
+            See our work &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <CTABanner />
+</BaseLayout>

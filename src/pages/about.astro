@@ -1,0 +1,124 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CTABanner from "../components/CTABanner.astro";
+---
+
+<BaseLayout
+  title="About"
+  description="Meet the team behind TechHound. A Pittsburgh-based tech agency built to deliver premium software at fair prices."
+>
+  <section class="px-4 py-10 md:py-14 sm:px-6 lg:px-8 bg-[#FAFAF8] dark:bg-[#111111]">
+    <div class="container-default text-center">
+      <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-4">About TechHound</h1>
+      <p class="text-secondary text-lg max-w-2xl mx-auto">
+        We started TechHound because we thought businesses deserved better. Better software, better service, better pricing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Meet the Team -->
+  <section class="section-padding">
+    <div class="container-default">
+      <h2 class="text-3xl font-heading font-bold mb-12 text-center">Meet the Team</h2>
+
+      <!-- Klaus -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <img
+            src="/images/klaus-founder.png"
+            alt="Klaus, co-founder of TechHound"
+            class="w-full"
+            loading="eager"
+          />
+        </div>
+        <div>
+          <h3 class="text-2xl font-heading font-bold mb-2">Klaus</h3>
+          <p class="text-gold dark:text-gold-light text-sm font-medium mb-4">Co-Founder &middot; Engineering</p>
+          <div class="space-y-4 text-secondary leading-relaxed">
+            <p>
+              Klaus graduated from the University of Pittsburgh with a degree in computer engineering. He's built software for Fortune 500 companies like Lubrizol and for federal agencies including the FDIC, TVA, and DOT. Today he works as a software engineer at DraftKings. He's spent years taking complex technical projects from idea to delivery.
+            </p>
+            <p>
+              When you work with TechHound, you talk directly to the engineers building your project. There's no sales team, no account managers, no game of telephone. The person on the call is the person writing the code.
+            </p>
+            <p>
+              Klaus also brings on talented engineering students from the University of Pittsburgh to help with projects. Every student is personally vetted and supervised, keeping the team sharp while giving students real-world experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sam -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="rounded-xl overflow-hidden shadow-lg lg:order-2">
+          <img
+            src="/images/sam-founder.png"
+            alt="Sam, co-founder of TechHound"
+            class="w-full"
+            loading="lazy"
+          />
+        </div>
+        <div class="lg:order-1">
+          <h3 class="text-2xl font-heading font-bold mb-2">Sam</h3>
+          <p class="text-gold dark:text-gold-light text-sm font-medium mb-4">Co-Founder &middot; Operations</p>
+          <div class="space-y-4 text-secondary leading-relaxed">
+            <p>
+              Sam leads everything outside the code. Branding, marketing, creative direction, client communications, and day-to-day operations all run through her. She makes sure the business side of TechHound runs as smoothly as the technical side.
+            </p>
+            <p>
+              From shaping how TechHound presents itself to the world to making sure every client has a great experience from first call to final delivery, Sam keeps the operation tight and the quality high.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="section-padding bg-[#FAFAF8] dark:bg-[#111111]">
+    <div class="container-default max-w-3xl">
+      <h2 class="text-3xl font-heading font-bold mb-6 text-center">Our Story</h2>
+      <div class="space-y-4 text-secondary leading-relaxed">
+        <p>
+          The agency model is broken. For years, businesses have paid tens of thousands of dollars for websites and apps that didn't need to cost that much. And the gap between what agencies charge and what the work actually costs has only gotten wider.
+        </p>
+        <p>
+          AI has changed how software gets built. Development that used to take weeks can now be done in days. Tools that used to require entire teams can now be handled by a small, focused crew. The cost of building great software has dropped significantly.
+        </p>
+        <p>
+          But most agencies haven't lowered their prices. They pocket the difference.
+        </p>
+        <p>
+          TechHound was built to change that. We use modern tools, including AI, to deliver the same premium quality at a fraction of the traditional cost. We're not cutting corners. We're cutting overhead.
+        </p>
+        <p>
+          We believe every business, from a local HVAC company to a growing startup, should have access to professional software without breaking the bank. That's what we're here for.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pittsburgh Connection -->
+  <section class="relative section-padding overflow-hidden">
+    <div class="absolute inset-0">
+      <img
+        src="/images/pitt.png"
+        alt="Pittsburgh skyline with digital network overlay"
+        class="w-full h-full object-cover"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 bg-[#0A0A0A]/85"></div>
+    </div>
+    <div class="relative container-default text-center">
+      <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white mb-6">Pittsburgh Roots. National Reach.</h2>
+      <p class="text-[#C0C0C0] text-lg max-w-2xl mx-auto leading-relaxed">
+        We're proud to call Pittsburgh home. It's a city built on hard work, reinvention, and community. Those values run through everything we do. But our clients aren't just local. We work with businesses across the country and around the world.
+      </p>
+    </div>
+  </section>
+
+  <CTABanner
+    title="Want to work with us?"
+    subtitle="We'd love to hear about your project."
+  />
+</BaseLayout>

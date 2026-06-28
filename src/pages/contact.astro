@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactForm from "../components/ContactForm.astro";
+import { siteConfig } from "../data/siteConfig";
+---
+
+<BaseLayout
+  title="Contact"
+  description="Get in touch with TechHound. Schedule a free consultation to discuss your website, app, or automation project."
+>
+  <section class="px-4 py-10 md:py-14 sm:px-6 lg:px-8 bg-[#FAFAF8] dark:bg-[#111111]">
+    <div class="container-default text-center">
+      <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-4">Let's Talk</h1>
+      <p class="text-secondary text-lg max-w-2xl mx-auto">
+        Have a project in mind? Just want to ask a question? Reach out and we'll get back to you within 24 hours.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="section-padding">
+    <div class="container-default">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <!-- Form -->
+        <div class="lg:col-span-2">
+          <ContactForm />
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-8">
+          <div>
+            <h3 class="font-heading font-semibold text-lg mb-3">Call Us</h3>
+            <a
+              href={`tel:${siteConfig.phone}`}
+              class="text-gold dark:text-gold-light hover:underline text-lg"
+            >
+              {siteConfig.phone}
+            </a>
+          </div>
+
+          <div>
+            <h3 class="font-heading font-semibold text-lg mb-3">Email Us</h3>
+            <a
+              href={`mailto:${siteConfig.email}`}
+              class="text-gold dark:text-gold-light hover:underline"
+            >
+              {siteConfig.email}
+            </a>
+          </div>
+
+          <div>
+            <h3 class="font-heading font-semibold text-lg mb-3">Meet With Us</h3>
+            <p class="text-secondary leading-relaxed">
+              Remote or in-person meetups in the Pittsburgh area.
+            </p>
+          </div>
+
+          <div class="card p-6">
+            <h3 class="font-heading font-semibold text-lg mb-2">Free Consultation</h3>
+            <p class="text-secondary text-sm leading-relaxed">
+              Every conversation starts with a free, no-obligation discovery call. We'll learn about your project and let you know how we can help.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
