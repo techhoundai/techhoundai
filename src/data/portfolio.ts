@@ -36,21 +36,4 @@ export const projects: PortfolioProject[] = [
   },
 ];
 
-export const testimonials: Testimonial[] = [
-  {
-    quote:
-      "TechHound built us a website that actually looks like our business. Professional, clean, and our customers love it. The whole process was easy and the price was fair.",
-    name: "Jordan Mitchell",
-    company: "Complete Home Comfort PGH",
-    projectId: "complete-home-comfort",
-    featured: true,
-  },
-  {
-    quote:
-      "We needed a site that worked as hard as we do. TechHound delivered exactly that, on time and on budget. Would recommend them to any small business.",
-    name: "Alex Rivera",
-    company: "Complete Home Comfort PGH",
-    projectId: "complete-home-comfort",
-    featured: true,
-  },
-];
+export const testimonials: Testimonial[] = [];
