@@ -18,7 +18,10 @@ const { title, description, icon, items, compact = false } = Astro.props;
       {icon === "lucide:zap" && <path stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />}
       {icon === "lucide:search" && <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />}
       {icon === "lucide:server" && <path stroke-linecap="round" stroke-linejoin="round" d="M2 5a2 2 0 012-2h16a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm0 10a2 2 0 012-2h16a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4zm4-8h.01M6 17h.01" />}
+      {icon === "lucide:bot" && <><path stroke-linecap="round" stroke-linejoin="round" d="M12 8V4H8" /><rect x="3" y="8" width="18" height="12" rx="2" stroke-linecap="round" stroke-linejoin="round" /><path stroke-linecap="round" stroke-linejoin="round" d="M2 14h2m16 0h2m-11-2v1m4-1v1" /></>}
+      {icon === "lucide:radar" && <><path stroke-linecap="round" stroke-linejoin="round" d="M19.07 4.93A10 10 0 004.93 19.07" /><path stroke-linecap="round" stroke-linejoin="round" d="M16.24 7.76A6 6 0 007.76 16.24" /><path stroke-linecap="round" stroke-linejoin="round" d="M13.41 10.59A2 2 0 0010.59 13.41" /><line x1="2" y1="2" x2="22" y2="22" stroke-linecap="round" /></>}
       {icon === "lucide:palette" && <path stroke-linecap="round" stroke-linejoin="round" d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-1 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-5.52-4.48-10-10-10zM6.5 13a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm3-4a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm5 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm3 4a1.5 1.5 0 110-3 1.5 1.5 0 010 3z" />}
+      {icon === "lucide:headphones" && <><path stroke-linecap="round" stroke-linejoin="round" d="M3 18v-6a9 9 0 0118 0v6" /><path stroke-linecap="round" stroke-linejoin="round" d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z" /></>}
     </svg>
   </div>
   <h3 class="text-xl font-heading font-semibold mb-3">{title}</h3>

@@ -14,17 +14,17 @@ const {
 } = Astro.props;
 ---
 
-<section class="bg-[#1A1A1A] dark:bg-[#111111] border-t border-[#2A2A2A] dark:border-[#1E1E1E]">
+<section class="border-t border-[#E8E4DC] dark:border-[#1E1E1E]">
   <div class="container-default px-4 py-10 sm:px-6 sm:py-12 lg:px-8 text-center">
-    <h2 class="text-2xl sm:text-3xl font-heading font-bold text-white mb-3">
+    <h2 class="text-2xl sm:text-3xl font-heading font-bold mb-3">
       {title}
     </h2>
-    <p class="text-base text-[#999] mb-6 max-w-xl mx-auto">
+    <p class="text-base text-secondary mb-6 max-w-xl mx-auto">
       {subtitle}
     </p>
     <a
       href={buttonHref}
-      class="inline-flex items-center justify-center px-8 py-4 bg-gold text-[#0A0A0A] font-semibold rounded-lg hover:bg-gold-light transition-all text-lg"
+      class="btn-primary text-lg !px-8 !py-4"
     >
       {buttonLabel}
     </a>

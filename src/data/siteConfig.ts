@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "TechHound",
-  tagline: "Premium Tech Services, Honest Pricing",
+  tagline: "Unleash Your Business",
   url: "https://techhound.ai",
   email: "contact@techhound.ai",
   phone: "412-310-5020",

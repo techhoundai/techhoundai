@@ -7,20 +7,20 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    title: "Web Development",
+    title: "Web Development & Hosting",
     description:
-      "From clean marketing sites to full web applications, we build fast, modern websites that look great and actually work for your business.",
+      "We build everything from simple marketing sites to full web applications, and we host them too. If you need a website that looks good and actually works, we've got you.",
     icon: "lucide:globe",
     items: [
       "Website design and development",
-      "Ongoing website maintenance and updates",
+      "Managed hosting and maintenance",
       "Static and dynamic site solutions",
     ],
   },
   {
     title: "Mobile App Development",
     description:
-      "Native and cross-platform mobile apps for iOS and Android. We handle the full lifecycle from design to deployment to ongoing updates.",
+      "Native and cross-platform mobile apps for iOS and Android. We take it from design through deployment and stick around for updates after launch.",
     icon: "lucide:smartphone",
     items: [
       "iOS and Android app development",
@@ -28,19 +28,43 @@ export const services: Service[] = [
     ],
   },
   {
-    title: "Custom Business Automations",
+    title: "Business Process Automation",
     description:
-      "Stop doing repetitive work manually. We build custom automations that connect your tools and streamline your workflows.",
+      "If you're doing the same thing over and over, there's probably a way to automate it. We build custom automations and connect your systems together, whether that's your CRM, payment platform, or internal tools.",
     icon: "lucide:zap",
     items: [
       "Custom workflow automations",
-      "Integration between existing tools and platforms",
+      "System integrations across platforms",
+      "End-to-end process automation",
+    ],
+  },
+  {
+    title: "Custom AI Agents",
+    description:
+      "We build AI agents that are trained on your data and actually get things done. They can run in the cloud or locally on your own machines, depending on what you need.",
+    icon: "lucide:bot",
+    items: [
+      "Custom agents trained on your business data",
+      "Cloud-hosted and locally-hosted options",
+      "Built by the team behind BotHound",
+    ],
+  },
+  {
+    title: "Lead Generation & Data Intelligence",
+    description:
+      "We build web scraping and monitoring tools that find you leads, track what people are saying about your brand, and keep an eye on what your competitors are up to.",
+    icon: "lucide:radar",
+    items: [
+      "Automated lead generation",
+      "Online brand and reputation monitoring",
+      "Competitor monitoring and analysis",
+      "Custom web scraping solutions",
     ],
   },
   {
     title: "SEO & AEO",
     description:
-      "Get found by customers and by AI. We handle traditional search optimization and the new frontier of AI Engine Optimization.",
+      "We handle traditional SEO and the newer side of things, AI Engine Optimization. The goal is simple: make sure your business shows up when people search for what you do, whether they're using Google or an AI.",
     icon: "lucide:search",
     items: [
       "Traditional SEO (keywords, technical SEO, backlinking)",
@@ -68,6 +92,17 @@ export const services: Service[] = [
       "Logo and visual identity design",
       "Google Business, Facebook, Yelp profile setup",
       "Business profile optimization",
+    ],
+  },
+  {
+    title: "Managed IT & Support",
+    description:
+      "Not every problem needs a whole project. Sometimes you just need someone to call. We handle day-to-day tech issues, updates, and general IT support for businesses that don't want to hire a full-time team.",
+    icon: "lucide:headphones",
+    items: [
+      "Ongoing technical support",
+      "Security updates and monitoring",
+      "General IT management",
     ],
   },
 ];
