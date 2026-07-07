@@ -50,7 +50,7 @@ export const services: Service[] = [
     ],
   },
   {
-    title: "Lead Generation & Data Intelligence",
+    title: "Lead Generation & Digital Monitoring",
     description:
       "We build web scraping and monitoring tools that find you leads, track what people are saying about your brand, and keep an eye on what your competitors are up to.",
     icon: "lucide:radar",
@@ -95,14 +95,14 @@ export const services: Service[] = [
     ],
   },
   {
-    title: "Managed IT & Support",
+    title: "General Tech Support",
     description:
-      "Not every problem needs a whole project. Sometimes you just need someone to call. We handle day-to-day tech issues, updates, and general IT support for businesses that don't want to hire a full-time team.",
+      "Not every problem needs a whole project. Sometimes you just need someone to call. We handle day-to-day tech issues, updates, and general tech support for businesses that don't want to hire a full-time team.",
     icon: "lucide:headphones",
     items: [
       "Ongoing technical support",
       "Security updates and monitoring",
-      "General IT management",
+      "General tech management",
     ],
   },
 ];
