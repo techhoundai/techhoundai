@@ -3,16 +3,19 @@ title: "How to Automate Your Invoicing and Save Hours Every Week"
 description: "Manual invoicing is one of the biggest time sinks for small businesses. Here's how automation can take it off your plate without losing control."
 date: 2026-04-16
 author: "Klaus"
-image: "/images/code.jpg"
 tags: ["automation", "invoicing", "business", "efficiency"]
 draft: false
+relatedPosts:
+  - what-small-businesses-get-wrong-about-automation
+  - what-is-an-ai-agent-and-how-can-it-help-your-business
+  - building-custom-software-vs-buying-off-the-shelf
 ---
 
 If you run a service business, invoicing is probably one of those tasks you dread. Not because it's hard, but because it's tedious, it takes longer than it should, and it somehow always ends up getting done at 10pm after a full day of actual work.
 
 You finish a job. You sit down at your computer. You open your invoicing software (or worse, a Word template). You fill in the customer's information, the services performed, the line items, the totals. You double-check the math. You save it as a PDF. You email it. Then you do it again for the next job. And the next one.
 
-For a business that completes five to ten jobs per week, that's easily three to five hours of invoicing time. Every week. Every month. Every year. It adds up to a staggering amount of time spent on something that doesn't require any real thought or judgment. And that makes it a perfect candidate for automation.
+For a business that completes five to ten jobs per week, that's easily three to five hours of invoicing time. Every week. Every month. Every year. It adds up to a staggering amount of time spent on something that doesn't require any real thought or judgment. And that makes it a perfect candidate for automation. (If you're new to automation, make sure you avoid the [common mistakes small businesses make](/blog/what-small-businesses-get-wrong-about-automation) before diving in.)
 
 ## What Automated Invoicing Looks Like
 
@@ -46,7 +49,7 @@ The specific tools depend on what you're already using, but the general ingredie
 
 **An invoicing platform.** Tools like QuickBooks, FreshBooks, Xero, and Stripe all have APIs that allow automated invoice creation and sending. If you're already using one of these tools, you're halfway there.
 
-**An automation layer.** Something that connects the trigger to the invoicing platform. This could be a tool like Zapier or Make for simpler setups, or a custom integration for more complex workflows.
+**An automation layer.** Something that connects the trigger to the invoicing platform. This could be a tool like Zapier or Make for simpler setups, or a [custom integration](/blog/building-custom-software-vs-buying-off-the-shelf) for more complex workflows.
 
 ## A Real Example
 

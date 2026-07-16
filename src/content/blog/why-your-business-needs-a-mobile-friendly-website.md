@@ -3,9 +3,12 @@ title: "Why Your Business Needs a Mobile-Friendly Website (Not Just a Mobile App
 description: "Most businesses don't need a mobile app. What they do need is a website that works well on phones. Here's how to think about it."
 date: 2026-04-30
 author: "Klaus"
-image: "/images/computer.jpg"
 tags: ["web development", "mobile", "business"]
 draft: false
+relatedPosts:
+  - how-to-choose-the-right-type-of-website-for-your-business
+  - static-vs-dynamic-websites-which-one-does-your-business-need
+  - the-real-cost-of-not-having-a-website-in-2026
 ---
 
 At least once a month, a potential client tells us they need a mobile app for their business. When we ask what the app would do, the answer is usually some version of: let customers see our services, read about us, and get in touch.
@@ -22,7 +25,7 @@ When someone hears about your business and pulls out their phone to look you up,
 
 That result is your website. If it looks good on their phone, loads quickly, and makes it easy to find your phone number or fill out a contact form, you just won a customer. If it loads slowly, has tiny text they need to pinch to read, or has buttons so small they tap the wrong one, you just lost one.
 
-Over 60% of all web traffic now comes from mobile devices. For local businesses, that number is even higher. The mobile experience on your website isn't a nice-to-have feature. It's the primary way most people will interact with your business online.
+Over 60% of all web traffic now comes from mobile devices. For local businesses, that number is even higher. The mobile experience on your website isn't a nice-to-have feature. It's the primary way most people will interact with your business online. If you don't have a website at all yet, the stakes are even higher — see [the real cost of not having a website in 2026](/blog/the-real-cost-of-not-having-a-website-in-2026).
 
 ## What "Mobile-Friendly" Actually Means
 
@@ -62,7 +65,7 @@ Here's the practical reality that seals the deal for most small businesses. Buil
 
 And that's just the build cost. Apps need to be maintained for two separate platforms (iOS and Android), updated when Apple and Google release new operating system versions, and submitted to app stores that can reject them for any number of reasons. There's an ongoing maintenance burden that doesn't exist with a website.
 
-A responsive website, on the other hand, works on every device with a browser. Build it once, maintain it once, and it works everywhere.
+A responsive website, on the other hand, works on every device with a browser. Build it once, maintain it once, and it works everywhere. Not sure what type of site is right for you? We break down the options in our guide to [choosing the right type of website](/blog/how-to-choose-the-right-type-of-website-for-your-business).
 
 ## How to Test Your Current Site
 

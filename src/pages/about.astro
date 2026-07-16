@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 import CTABanner from "../components/CTABanner.astro";
+import klausImage from "../assets/images/klaus-founder.png";
+import samImage from "../assets/images/sam-founder.png";
 ---
 
 <BaseLayout
@@ -24,9 +27,10 @@ import CTABanner from "../components/CTABanner.astro";
       <!-- Klaus -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
         <div class="rounded-xl overflow-hidden shadow-lg">
-          <img
-            src="/images/klaus-founder.png"
+          <Image
+            src={klausImage}
             alt="Klaus, co-founder of TechHound"
+            width={800}
             class="w-full"
             loading="eager"
           />
@@ -51,9 +55,10 @@ import CTABanner from "../components/CTABanner.astro";
       <!-- Sam -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="rounded-xl overflow-hidden shadow-lg lg:order-2">
-          <img
-            src="/images/sam-founder.png"
+          <Image
+            src={samImage}
             alt="Sam, co-founder of TechHound"
+            width={800}
             class="w-full"
             loading="lazy"
           />

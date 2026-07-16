@@ -6,6 +6,11 @@ import { getCollection } from "astro:content";
 const posts = (await getCollection("blog"))
   .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+function getReadingTime(text: string): string {
+  const minutes = Math.max(1, Math.ceil(text.trim().split(/\s+/).length / 200));
+  return `${minutes} min read`;
+}
 ---
 
 <BaseLayout
@@ -32,8 +37,9 @@ const posts = (await getCollection("blog"))
               description={post.data.description}
               date={post.data.date}
               slug={post.id}
-              image={post.data.image}
               tags={post.data.tags}
+              headingLevel="h2"
+              readingTime={post.body ? getReadingTime(post.body) : undefined}
             />
           ))}
         </div>

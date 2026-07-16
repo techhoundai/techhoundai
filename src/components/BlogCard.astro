@@ -4,12 +4,13 @@ interface Props {
   description: string;
   date: Date;
   slug: string;
-  image?: string;
   tags?: string[];
   readingTime?: string;
+  headingLevel?: "h2" | "h3";
 }
 
-const { title, description, date, slug, image, tags, readingTime } = Astro.props;
+const { title, description, date, slug, tags, readingTime, headingLevel = "h3" } = Astro.props;
+const Heading = headingLevel;
 
 const formattedDate = date.toLocaleDateString("en-US", {
   year: "numeric",
@@ -18,25 +19,15 @@ const formattedDate = date.toLocaleDateString("en-US", {
 });
 ---
 
-<a href={`/blog/${slug}`} class="card overflow-hidden group block hover:shadow-lg transition-all duration-300">
-  {image && (
-    <div class="relative overflow-hidden aspect-video">
-      <img
-        src={image}
-        alt={title}
-        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-        loading="lazy"
-      />
-    </div>
-  )}
+<a href={`/blog/${slug}/`} class="card overflow-hidden group block hover:shadow-lg transition-all duration-300">
   <div class="p-6">
     <div class="flex items-center gap-3 text-xs text-secondary mb-3">
       <time datetime={date.toISOString()}>{formattedDate}</time>
       {readingTime && <span>{readingTime}</span>}
     </div>
-    <h3 class="text-lg font-heading font-semibold mb-2 group-hover:text-gold transition-colors">
+    <Heading class="text-lg font-heading font-semibold mb-2 group-hover:text-gold transition-colors">
       {title}
-    </h3>
+    </Heading>
     <p class="text-secondary text-sm leading-relaxed">{description}</p>
     {tags && tags.length > 0 && (
       <div class="flex flex-wrap gap-2 mt-4">

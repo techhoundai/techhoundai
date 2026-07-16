@@ -1,9 +1,11 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 import PortfolioCard from "../components/PortfolioCard.astro";
 import Testimonial from "../components/Testimonial.astro";
 import CTABanner from "../components/CTABanner.astro";
 import { projects, testimonials } from "../data/portfolio";
+import bothound1Image from "../assets/images/bothound1.png";
 ---
 
 <BaseLayout
@@ -52,9 +54,10 @@ import { projects, testimonials } from "../data/portfolio";
           <a href="/bothound" class="btn-primary">Learn More About BotHound</a>
         </div>
         <div class="rounded-xl overflow-hidden shadow-lg border border-[#E8E4DC] dark:border-[#1E1E1E]">
-          <img
-            src="/images/bothound1.png"
+          <Image
+            src={bothound1Image}
             alt="BotHound bot builder interface showing task pipelines and run history"
+            width={800}
             class="w-full"
             loading="lazy"
           />

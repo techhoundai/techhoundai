@@ -3,9 +3,12 @@ title: "How to Choose the Right Type of Website for Your Business"
 description: "Not every business needs the same kind of website. Here's a breakdown of the main types and how to figure out which one is right for you."
 date: 2026-01-08
 author: "Klaus"
-image: "/images/computer.jpg"
 tags: ["web development", "business", "websites"]
 draft: false
+relatedPosts:
+  - static-vs-dynamic-websites-which-one-does-your-business-need
+  - the-real-cost-of-not-having-a-website-in-2026
+  - why-your-business-needs-a-mobile-friendly-website
 ---
 
 One of the first questions we get from new clients is some version of: "I need a website, but I have no idea what kind." And honestly, it's a fair question. The web development world throws around a lot of jargon, and most of it isn't helpful if you're just trying to get your business online.
@@ -16,7 +19,7 @@ So let's cut through the noise. There are really only a few categories of websit
 
 This is the most common type of website for small businesses, and for good reason. A marketing site is essentially your digital storefront. It tells people who you are, what you do, where you're located, and how to get in touch. Think of it like a brochure that's available 24/7.
 
-These sites are typically five to ten pages. You'll have a homepage, an about page, a services page, a contact page, and maybe a blog or portfolio. They load fast, they're easy to maintain, and they cost less than more complex options.
+These sites are typically five to ten pages. You'll have a homepage, an about page, a services page, a contact page, and maybe a blog or portfolio. They load fast, they're easy to maintain, and they [cost less](/blog/why-software-doesnt-have-to-cost-what-it-used-to) than more complex options.
 
 If your main goal is to show up when someone searches for your type of business and give them enough confidence to call you, a marketing site is probably all you need.
 
@@ -53,7 +56,7 @@ Here's a quick way to think about it:
 - **"I have a business process I want to turn into a tool."** Web application.
 - **"I'm running a campaign and need a focused page."** Landing page.
 
-Most businesses start with a marketing site and add on from there as they grow. That's a perfectly fine approach. You don't need to build everything at once.
+Most businesses start with a marketing site and add on from there as they grow. That's a perfectly fine approach. You don't need to build everything at once. If you're not sure whether you need a static or dynamic build, we break that down in our guide to [static vs. dynamic websites](/blog/static-vs-dynamic-websites-which-one-does-your-business-need).
 
 ## A Note on "Website Builders"
 

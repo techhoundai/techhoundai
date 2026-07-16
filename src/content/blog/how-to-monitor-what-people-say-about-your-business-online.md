@@ -3,9 +3,12 @@ title: "How to Monitor What People Say About Your Business Online"
 description: "Your online reputation matters more than ever. Here's how to keep track of what customers, competitors, and the internet are saying about your business."
 date: 2026-05-28
 author: "Klaus"
-image: "/images/computer.jpg"
 tags: ["reputation monitoring", "marketing", "business", "lead generation"]
 draft: false
+relatedPosts:
+  - how-web-scraping-powers-smarter-business-decisions
+  - a-practical-guide-to-google-business-profile-optimization
+  - what-small-businesses-get-wrong-about-automation
 ---
 
 There's a conversation happening about your business online right now. Maybe it's a customer leaving a review on Google. Maybe it's someone mentioning you in a local Facebook group. Maybe it's a competitor's customer complaining about their service and asking for alternatives.
@@ -26,7 +29,7 @@ The businesses that monitor their online presence consistently are the ones that
 
 Your business can be mentioned in more places than you might expect:
 
-**Google Reviews.** The most visible and often the most impactful. Most consumers check Google reviews before choosing a local business.
+**[Google Reviews](/blog/a-practical-guide-to-google-business-profile-optimization).** The most visible and often the most impactful. Most consumers check Google reviews before choosing a local business.
 
 **Yelp.** Still significant for restaurants, home services, and healthcare businesses. Less relevant for B2B.
 
@@ -50,7 +53,7 @@ Automated monitoring solves this. There are tools and custom solutions that cont
 
 At the basic level, Google Alerts is free and will notify you when your business name appears in Google's index. It's a reasonable starting point, but it misses social media, forums, and many review platforms.
 
-For more comprehensive monitoring, you can use dedicated reputation management tools, or you can have a custom monitoring system built for your specific needs. We build these for clients at TechHound using web scraping and data collection tools that cover the platforms and sources most relevant to their industry.
+For more comprehensive monitoring, you can use dedicated reputation management tools, or you can have a custom monitoring system built for your specific needs. We build these for clients at TechHound using [web scraping and data collection tools](/blog/how-web-scraping-powers-smarter-business-decisions) that cover the platforms and sources most relevant to their industry.
 
 ## How to Respond
 

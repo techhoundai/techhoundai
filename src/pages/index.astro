@@ -6,6 +6,7 @@ import Testimonial from "../components/Testimonial.astro";
 import CTABanner from "../components/CTABanner.astro";
 import { services } from "../data/services";
 import { testimonials } from "../data/portfolio";
+import pittImage from "../assets/images/pitt.png";
 ---
 
 <BaseLayout
@@ -16,7 +17,7 @@ import { testimonials } from "../data/portfolio";
     title="Unleash Your Business."
     subtitle="Websites, apps, AI agents, automations, lead generation. We handle the tech side of your business so you don't have to. Based in Pittsburgh, working everywhere."
     cta={{ label: "Schedule a Consultation", href: "/contact" }}
-    backgroundImage="/images/pitt.png"
+    backgroundImage={pittImage}
   />
 
   <!-- Services Overview -->
@@ -30,7 +31,7 @@ import { testimonials } from "../data/portfolio";
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service) => (
-          <a href="/services" class="block">
+          <a href={`/services/${service.slug}/`} class="block">
             <ServiceCard
               title={service.title}
               description={service.description}
@@ -45,10 +46,7 @@ import { testimonials } from "../data/portfolio";
 
   <!-- Why TechHound -->
   <section class="relative section-padding overflow-hidden">
-    <div class="absolute inset-0">
-      <img src="/images/background1.png" alt="" class="w-full h-full object-cover" loading="lazy" />
-      <div class="absolute inset-0 bg-[#0A0A0A]/85"></div>
-    </div>
+    <div class="absolute inset-0 bg-[#0A0A0A]"></div>
     <div class="relative container-default">
       <div class="max-w-3xl mx-auto text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white mb-6">Your Business's Best Friend</h2>

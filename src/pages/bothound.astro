@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
 import CTABanner from "../components/CTABanner.astro";
+import bothound1Image from "../assets/images/bothound1.png";
+import bothound2Image from "../assets/images/bothound2.png";
 ---
 
 <BaseLayout
@@ -33,9 +36,10 @@ import CTABanner from "../components/CTABanner.astro";
           </a>
         </div>
         <div class="rounded-xl overflow-hidden shadow-2xl border border-[#1E1E1E]">
-          <img
-            src="/images/bothound1.png"
+          <Image
+            src={bothound1Image}
             alt="BotHound bot builder interface showing task pipelines and run history"
+            width={800}
             class="w-full"
             loading="eager"
           />
@@ -96,9 +100,10 @@ import CTABanner from "../components/CTABanner.astro";
     <div class="container-default">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="rounded-xl overflow-hidden shadow-lg border border-[#E8E4DC] dark:border-[#1E1E1E]">
-          <img
-            src="/images/bothound2.png"
+          <Image
+            src={bothound2Image}
             alt="BotHound completed run detail view showing run summary and task outputs"
+            width={800}
             class="w-full"
             loading="lazy"
           />

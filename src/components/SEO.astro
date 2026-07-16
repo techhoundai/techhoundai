@@ -24,6 +24,33 @@ const {
 const canonicalURL = new URL(Astro.url.pathname, siteConfig.url);
 const imageURL = new URL(image, siteConfig.url);
 const fullTitle = title === "Home" ? `${siteConfig.name} | ${siteConfig.tagline}` : `${title} | ${siteConfig.name}`;
+
+import { services } from "../data/services";
+
+const serviceSlugNames: Record<string, string> = Object.fromEntries(
+  services.map((s) => [s.slug, s.title])
+);
+
+const segmentNames: Record<string, string> = {
+  about: "About",
+  services: "Services",
+  portfolio: "Portfolio",
+  process: "Process & Pricing",
+  contact: "Contact",
+  blog: "Blog",
+  bothound: "BotHound",
+  ...serviceSlugNames,
+};
+
+const pathname = Astro.url.pathname.replace(/\/$/, "");
+const segments = pathname.split("/").filter(Boolean);
+const breadcrumbs = [
+  { name: "Home", url: siteConfig.url },
+  ...segments.map((seg, i) => ({
+    name: segmentNames[seg] || seg.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" "),
+    url: `${siteConfig.url}/${segments.slice(0, i + 1).join("/")}`,
+  })),
+];
 ---
 
 <title>{fullTitle}</title>
@@ -51,3 +78,16 @@ const fullTitle = title === "Home" ? `${siteConfig.name} | ${siteConfig.tagline}
 {article?.tags?.map((tag) => (
   <meta property="article:tag" content={tag} />
 ))}
+
+{segments.length > 0 && (
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: breadcrumbs.map((crumb, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: crumb.name,
+      item: crumb.url,
+    })),
+  })} />
+)}

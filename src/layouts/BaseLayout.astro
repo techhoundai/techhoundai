@@ -27,11 +27,23 @@ const { title, description, image, type, article } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="/images/logo-dark.png" />
-    <link rel="apple-touch-icon" href="/images/logo-dark.png" />
+    <!-- Google Analytics 4 -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8Z28PBH7G"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C8Z28PBH7G');
+    </script>
+
+    <link rel="preconnect" href="https://api.web3forms.com" />
+    <meta name="theme-color" content="#C8A951" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title="TechHound Blog" href="/rss.xml" />
     <SEO title={title} description={description} image={image} type={type} article={article} />
 
     <script is:inline>
@@ -43,37 +55,74 @@ const { title, description, image, type, article } = Astro.props;
 
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url,
-      email: siteConfig.email,
-      telephone: siteConfig.phone,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Pittsburgh",
-        addressRegion: "PA",
-        addressCountry: "US",
-      },
-    })} />
-
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: siteConfig.name,
-      url: siteConfig.url,
-      email: siteConfig.email,
-      telephone: siteConfig.phone,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Pittsburgh",
-        addressRegion: "PA",
-        addressCountry: "US",
-      },
-      areaServed: {
-        "@type": "Country",
-        name: "United States",
-      },
-      priceRange: "$$",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": `${siteConfig.url}/#organization`,
+          name: siteConfig.name,
+          url: siteConfig.url,
+          description: siteConfig.description,
+          email: siteConfig.email,
+          telephone: siteConfig.phone,
+          logo: {
+            "@type": "ImageObject",
+            url: new URL(siteConfig.logo, siteConfig.url).href,
+          },
+          foundingDate: siteConfig.foundingDate,
+          founder: siteConfig.founders.map((f) => ({
+            "@type": "Person",
+            name: f.name,
+            jobTitle: f.role,
+          })),
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Pittsburgh",
+            addressRegion: "PA",
+            addressCountry: "US",
+          },
+          sameAs: Object.values(siteConfig.socials).filter(Boolean),
+        },
+        {
+          "@type": "LocalBusiness",
+          "@id": `${siteConfig.url}/#localbusiness`,
+          name: siteConfig.name,
+          url: siteConfig.url,
+          description: siteConfig.description,
+          email: siteConfig.email,
+          telephone: siteConfig.phone,
+          logo: {
+            "@type": "ImageObject",
+            url: new URL(siteConfig.logo, siteConfig.url).href,
+          },
+          image: new URL("/images/pitt.png", siteConfig.url).href,
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Pittsburgh",
+            addressRegion: "PA",
+            addressCountry: "US",
+          },
+          areaServed: {
+            "@type": "Country",
+            name: "United States",
+          },
+          priceRange: "$$",
+          openingHours: "Mo-Fr 09:00-17:00",
+          sameAs: Object.values(siteConfig.socials).filter(Boolean),
+          parentOrganization: { "@id": `${siteConfig.url}/#organization` },
+        },
+        {
+          "@type": "WebSite",
+          "@id": `${siteConfig.url}/#website`,
+          name: siteConfig.name,
+          url: siteConfig.url,
+          publisher: { "@id": `${siteConfig.url}/#organization` },
+          potentialAction: {
+            "@type": "SearchAction",
+            target: `https://www.google.com/search?q=site:techhound.ai+{search_term_string}`,
+            "query-input": "required name=search_term_string",
+          },
+        },
+      ],
     })} />
   </head>
   <body class="font-body min-h-screen flex flex-col">

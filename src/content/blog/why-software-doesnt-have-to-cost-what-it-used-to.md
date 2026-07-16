@@ -3,12 +3,15 @@ title: "Why Software Doesn't Have to Cost What It Used To"
 description: "AI has changed how software gets built. Here's why that means better prices for your business, without sacrificing quality."
 date: 2026-06-20
 author: "Klaus"
-image: "/images/code.jpg"
 tags: ["business", "pricing", "AI"]
 draft: false
+relatedPosts:
+  - building-custom-software-vs-buying-off-the-shelf
+  - how-to-choose-the-right-type-of-website-for-your-business
+  - what-is-an-ai-agent-and-how-can-it-help-your-business
 ---
 
-Five years ago, building a professional website for a small business meant paying $10,000 to $30,000. A custom web application could easily run six figures. Those prices made sense at the time because the work genuinely took that long.
+Five years ago, building a [professional website](/blog/how-to-choose-the-right-type-of-website-for-your-business) for a small business meant paying $10,000 to $30,000. A custom web application could easily run six figures. Those prices made sense at the time because the work genuinely took that long.
 
 That's not the case anymore.
 
@@ -32,6 +35,6 @@ And the quality? It's the same as what you'd get from a premium agency. We're no
 
 ## The Bottom Line
 
-You don't have to overpay for software anymore. The tools have gotten better, the process has gotten faster, and the cost should reflect that. If your current agency is still charging 2019 prices, it might be worth asking why.
+You don't have to overpay for software anymore. The tools have gotten better, the process has gotten faster, and the cost should reflect that. Whether you're [deciding between custom and off-the-shelf](/blog/building-custom-software-vs-buying-off-the-shelf) or just need a straightforward website, the cost should reflect that. If your current agency is still charging 2019 prices, it might be worth asking why.
 
 We're happy to show you what your project would actually cost. [Get in touch](/contact) for a free consultation.
