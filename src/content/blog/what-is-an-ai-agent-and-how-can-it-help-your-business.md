@@ -40,7 +40,7 @@ The important thing to understand is that the agent's capabilities are defined b
 
 ## Where AI Agents Make Sense for Businesses
 
-Not every business process is a good candidate for an AI agent. The best use cases share a few characteristics: they're repetitive, they follow a general pattern (even if the details change each time), and they currently take up a meaningful amount of someone's time. (For more on the common pitfalls when automating, see [What Small Businesses Get Wrong About Automation](/blog/what-small-businesses-get-wrong-about-automation).)
+Not every business process is a good candidate for an AI agent. The best use cases share a few characteristics: they're repetitive, they follow a general pattern (even if the details change each time), and they currently take up a meaningful amount of someone's time. (For more on the common pitfalls when automating, see [What Small Businesses Get Wrong About Automation](/blog/what-small-businesses-get-wrong-about-automation/).)
 
 Here are some concrete examples:
 
@@ -70,9 +70,9 @@ There are two broad approaches to getting an AI agent for your business. You can
 
 Off-the-shelf solutions work well for common use cases like customer support chat or appointment scheduling. They're faster to deploy and usually cheaper upfront. The tradeoff is that they're less flexible and might not integrate smoothly with the specific tools your business uses.
 
-Custom-built agents take longer to develop and cost more initially, but they're tailored to your exact processes and integrate directly with your existing systems. For businesses with unique workflows or specific requirements, [custom is usually the better path](/blog/building-custom-software-vs-buying-off-the-shelf).
+Custom-built agents take longer to develop and cost more initially, but they're tailored to your exact processes and integrate directly with your existing systems. For businesses with unique workflows or specific requirements, [custom is usually the better path](/blog/building-custom-software-vs-buying-off-the-shelf/).
 
-At TechHound, we build custom AI agents through our [BotHound](/bothound) platform. We train them on your data, connect them to your tools, and deploy them in a way that fits how your team actually works. They can run in the cloud or on your own hardware, depending on your data sensitivity and infrastructure requirements.
+At TechHound, we build custom AI agents through our [BotHound](/bothound/) platform. We train them on your data, connect them to your tools, and deploy them in a way that fits how your team actually works. They can run in the cloud or on your own hardware, depending on your data sensitivity and infrastructure requirements.
 
 ## Getting Started
 
@@ -80,4 +80,4 @@ If you're curious about whether an AI agent could help your business, the best f
 
 That list is your starting point. From there, you can evaluate whether a tool already exists for the job or whether something custom would be a better fit.
 
-If you want to talk through your specific situation, [reach out to us](/contact). We'll give you an honest assessment of where an agent would help and where it wouldn't.
+If you want to talk through your specific situation, [reach out to us](/contact/). We'll give you an honest assessment of where an agent would help and where it wouldn't.

@@ -15,7 +15,7 @@ If you run a service business, invoicing is probably one of those tasks you drea
 
 You finish a job. You sit down at your computer. You open your invoicing software (or worse, a Word template). You fill in the customer's information, the services performed, the line items, the totals. You double-check the math. You save it as a PDF. You email it. Then you do it again for the next job. And the next one.
 
-For a business that completes five to ten jobs per week, that's easily three to five hours of invoicing time. Every week. Every month. Every year. It adds up to a staggering amount of time spent on something that doesn't require any real thought or judgment. And that makes it a perfect candidate for automation. (If you're new to automation, make sure you avoid the [common mistakes small businesses make](/blog/what-small-businesses-get-wrong-about-automation) before diving in.)
+For a business that completes five to ten jobs per week, that's easily three to five hours of invoicing time. Every week. Every month. Every year. It adds up to a staggering amount of time spent on something that doesn't require any real thought or judgment. And that makes it a perfect candidate for automation. (If you're new to automation, make sure you avoid the [common mistakes small businesses make](/blog/what-small-businesses-get-wrong-about-automation/) before diving in.)
 
 ## What Automated Invoicing Looks Like
 
@@ -49,7 +49,7 @@ The specific tools depend on what you're already using, but the general ingredie
 
 **An invoicing platform.** Tools like QuickBooks, FreshBooks, Xero, and Stripe all have APIs that allow automated invoice creation and sending. If you're already using one of these tools, you're halfway there.
 
-**An automation layer.** Something that connects the trigger to the invoicing platform. This could be a tool like Zapier or Make for simpler setups, or a [custom integration](/blog/building-custom-software-vs-buying-off-the-shelf) for more complex workflows.
+**An automation layer.** Something that connects the trigger to the invoicing platform. This could be a tool like Zapier or Make for simpler setups, or a [custom integration](/blog/building-custom-software-vs-buying-off-the-shelf/) for more complex workflows.
 
 ## A Real Example
 
@@ -71,4 +71,4 @@ The entire invoicing workload went from four hours a week to about 20 minutes of
 
 Invoicing automation is one of the most straightforward automations a business can implement. The tools are mature, the patterns are well established, and the payoff is immediate and measurable. If you're still doing it manually, you're spending time you don't need to spend.
 
-We set these up for businesses regularly. If you want to see what it would look like for your specific setup, [reach out](/contact) and we'll walk you through it.
+We set these up for businesses regularly. If you want to see what it would look like for your specific setup, [reach out](/contact/) and we'll walk you through it.

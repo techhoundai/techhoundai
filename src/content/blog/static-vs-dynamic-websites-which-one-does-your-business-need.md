@@ -59,7 +59,7 @@ The practical question isn't really "static or dynamic" anymore. It's "what does
 
 Here's a straightforward framework:
 
-**Go static if:** your website primarily provides information about your business and doesn't need to change based on who's viewing it. Marketing sites, portfolios, blogs, landing pages, and small business sites are almost always better off as static sites. They're faster, cheaper, more secure, and easier to maintain. (Not sure what type you need in the first place? Start with our guide on [choosing the right type of website](/blog/how-to-choose-the-right-type-of-website-for-your-business).)
+**Go static if:** your website primarily provides information about your business and doesn't need to change based on who's viewing it. Marketing sites, portfolios, blogs, landing pages, and small business sites are almost always better off as static sites. They're faster, cheaper, more secure, and easier to maintain. (Not sure what type you need in the first place? Start with our guide on [choosing the right type of website](/blog/how-to-choose-the-right-type-of-website-for-your-business/).)
 
 **Go dynamic if:** your website needs to interact with users in personalized ways. If customers need to log in, if you're selling products with a cart and checkout, if you need a booking system with real-time availability, or if the content changes based on user input, you need dynamic functionality.
 
@@ -75,8 +75,8 @@ That said, WordPress has its place. If you genuinely need a content management s
 
 ## The Right Choice Saves You Money
 
-This decision has real cost implications. A static site is cheaper to build, cheaper to host, and cheaper to maintain. A dynamic site costs more on all three fronts. If you're paying for dynamic capabilities you don't actually use, you're overspending on your web presence. And the good news is that [software doesn't have to cost what it used to](/blog/why-software-doesnt-have-to-cost-what-it-used-to).
+This decision has real cost implications. A static site is cheaper to build, cheaper to host, and cheaper to maintain. A dynamic site costs more on all three fronts. If you're paying for dynamic capabilities you don't actually use, you're overspending on your web presence. And the good news is that [software doesn't have to cost what it used to](/blog/why-software-doesnt-have-to-cost-what-it-used-to/).
 
 On the other hand, trying to force a static solution when you genuinely need dynamic features will result in a site that frustrates your customers and creates manual work for your team. Neither outcome is good.
 
-If you're not sure which direction to go, [talk to us](/contact). We build both, and we'll give you an honest answer about what your business actually needs.
+If you're not sure which direction to go, [talk to us](/contact/). We build both, and we'll give you an honest answer about what your business actually needs.

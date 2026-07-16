@@ -41,7 +41,7 @@ Here are the signs that custom software is worth considering:
 
 **Your process is genuinely unique.** If you've looked at multiple off-the-shelf tools and none of them fit without significant workarounds or process changes, that's a signal. When you find yourself bending your business to fit the software instead of the other way around, something is wrong.
 
-**You're duct-taping multiple tools together.** If your current workflow involves copying data from one tool to another, using spreadsheets to bridge gaps between systems, or manually performing steps that connect two platforms, you're doing the job a [custom automation](/blog/what-small-businesses-get-wrong-about-automation) could do automatically.
+**You're duct-taping multiple tools together.** If your current workflow involves copying data from one tool to another, using spreadsheets to bridge gaps between systems, or manually performing steps that connect two platforms, you're doing the job a [custom automation](/blog/what-small-businesses-get-wrong-about-automation/) could do automatically.
 
 **The off-the-shelf tool costs more than you'd think.** SaaS pricing often scales with users, features, or volume. A tool that costs $50 per month for a small team might cost $2,000 per month when you have 50 users and need the enterprise feature set. Over a few years, that adds up to more than a custom solution would have cost.
 
@@ -67,7 +67,7 @@ Here's a practical framework for making the decision:
 
 **Step 3: Identify the gaps.** If an off-the-shelf tool covers 80% of what you need, that might be good enough. If it covers 50%, or if the missing 20% is the most important part, it's probably not.
 
-**Step 4: Get a rough custom estimate.** If you're leaning toward custom, talk to a developer or an agency about what it would take to build. Get a ballpark on timeline and cost — and keep in mind that [software doesn't have to cost what it used to](/blog/why-software-doesnt-have-to-cost-what-it-used-to). Compare that to the total cost of ownership for the off-the-shelf option over three to five years, including subscription fees, per-user charges, and any customization costs.
+**Step 4: Get a rough custom estimate.** If you're leaning toward custom, talk to a developer or an agency about what it would take to build. Get a ballpark on timeline and cost — and keep in mind that [software doesn't have to cost what it used to](/blog/why-software-doesnt-have-to-cost-what-it-used-to/). Compare that to the total cost of ownership for the off-the-shelf option over three to five years, including subscription fees, per-user charges, and any customization costs.
 
 **Step 5: Consider maintenance.** Custom software needs to be maintained. Who will fix bugs? Who will add features as your needs change? Make sure you have a plan for ongoing support before you commit to building something.
 
@@ -85,4 +85,4 @@ Here's a practical framework for making the decision:
 
 This decision doesn't have to be agonizing. In most cases, the right path is fairly obvious once you've defined your needs clearly and done a honest evaluation of what's available.
 
-If you're not sure where your situation falls, [talk to us](/contact). We both build custom software and help businesses evaluate and integrate off-the-shelf tools, so we don't have a financial incentive to push you in either direction. We'll tell you what we'd do if it were our business.
+If you're not sure where your situation falls, [talk to us](/contact/). We both build custom software and help businesses evaluate and integrate off-the-shelf tools, so we don't have a financial incentive to push you in either direction. We'll tell you what we'd do if it were our business.

@@ -84,13 +84,13 @@ This is where structured data connects to the broader trend of AI-driven search.
 
 "What time does Joe's Plumbing open?" If Joe's website has structured data with opening hours, the AI can give a confident answer. If it doesn't, the AI has to try to parse the information from the page content and might get it wrong, or might not answer at all.
 
-The same logic applies to AI tools like ChatGPT and Perplexity that are increasingly being used to find and recommend local businesses. Structured data makes it easier for these systems to include your business in their responses. This is the foundation of [AI Engine Optimization (AEO)](/blog/what-is-aeo-and-why-your-business-needs-it).
+The same logic applies to AI tools like ChatGPT and Perplexity that are increasingly being used to find and recommend local businesses. Structured data makes it easier for these systems to include your business in their responses. This is the foundation of [AI Engine Optimization (AEO)](/blog/what-is-aeo-and-why-your-business-needs-it/).
 
 ## Types of Structured Data That Matter for Businesses
 
 The Schema.org vocabulary (which is the standard used by all major search engines) includes hundreds of types, but for most businesses, a handful are relevant:
 
-**LocalBusiness** (or a more specific subtype like Plumber, Restaurant, or LegalService): Basic business information including name, address, phone, hours, and service area. This is especially important for [Google Business Profile optimization](/blog/a-practical-guide-to-google-business-profile-optimization).
+**LocalBusiness** (or a more specific subtype like Plumber, Restaurant, or LegalService): Basic business information including name, address, phone, hours, and service area. This is especially important for [Google Business Profile optimization](/blog/a-practical-guide-to-google-business-profile-optimization/).
 
 **Service**: Descriptions of individual services you offer, including pricing if applicable.
 
@@ -124,4 +124,4 @@ If you're not technical, this is something your web developer or SEO provider sh
 
 Structured data is one of those technical fundamentals that doesn't get talked about enough in the small business world. It's not glamorous, it doesn't make your website look any different to human visitors, and it takes some technical knowledge to implement correctly. But it directly influences how search engines and AI systems understand, present, and recommend your business.
 
-If your website doesn't have structured data yet, you're leaving visibility on the table. [Talk to us](/contact) and we'll audit what's on your site now and add the markup that will make the biggest difference for your specific business.
+If your website doesn't have structured data yet, you're leaving visibility on the table. [Talk to us](/contact/) and we'll audit what's on your site now and add the markup that will make the biggest difference for your specific business.

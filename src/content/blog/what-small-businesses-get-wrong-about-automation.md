@@ -29,13 +29,13 @@ The second mistake is scope. Business owners see the potential and want to autom
 
 The better approach is to pick one process, automate it, make sure it works reliably, and then move on to the next one. Start with whatever takes the most time or causes the most headaches. Get a win under your belt before expanding.
 
-We usually recommend starting with something concrete and contained. Sending a follow-up email after a form submission. Syncing customer data between two platforms. [Generating an invoice when a job is marked complete](/blog/how-to-automate-your-invoicing-and-save-hours-every-week). Small, clear, measurable.
+We usually recommend starting with something concrete and contained. Sending a follow-up email after a form submission. Syncing customer data between two platforms. [Generating an invoice when a job is marked complete](/blog/how-to-automate-your-invoicing-and-save-hours-every-week/). Small, clear, measurable.
 
 ## Choosing Tools Before Defining the Problem
 
 There are hundreds of automation platforms out there. Zapier, Make, n8n, Power Automate, custom scripts. We get a lot of clients who come to us already committed to a specific tool before they've even figured out what they need it to do.
 
-The tool should come last, not first. Define the problem, map the process, figure out what the automation actually needs to do, and then pick the tool that fits best. Sometimes it's a no-code platform. Sometimes it's a simple script. Sometimes it's a [custom integration](/blog/building-custom-software-vs-buying-off-the-shelf) that doesn't exist on any platform and needs to be built from scratch.
+The tool should come last, not first. Define the problem, map the process, figure out what the automation actually needs to do, and then pick the tool that fits best. Sometimes it's a no-code platform. Sometimes it's a simple script. Sometimes it's a [custom integration](/blog/building-custom-software-vs-buying-off-the-shelf/) that doesn't exist on any platform and needs to be built from scratch.
 
 Starting with the tool is like buying a drill before you know whether you need to make a hole or cut a board.
 
@@ -63,4 +63,4 @@ Before you automate something, measure how long it takes to do manually. After t
 
 Automation isn't about replacing people or eliminating jobs. It's about getting the tedious, repetitive stuff off your team's plate so they can focus on work that actually requires their judgment and expertise. The businesses that do it well start small, move deliberately, and treat their automations as living systems that evolve with the business.
 
-If you've been thinking about automating something in your business but aren't sure where to start, [let's talk about it](/contact). We'll help you figure out what's worth automating and what's better left alone.
+If you've been thinking about automating something in your business but aren't sure where to start, [let's talk about it](/contact/). We'll help you figure out what's worth automating and what's better left alone.

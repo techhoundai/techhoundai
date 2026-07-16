@@ -3,12 +3,12 @@ import ThemeToggle from "./ThemeToggle.astro";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/process", label: "Process" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
+  { href: "/about/", label: "About" },
+  { href: "/services/", label: "Services" },
+  { href: "/portfolio/", label: "Portfolio" },
+  { href: "/process/", label: "Process" },
+  { href: "/blog/", label: "Blog" },
+  { href: "/contact/", label: "Contact" },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -49,7 +49,7 @@ const currentPath = Astro.url.pathname;
 
       <div class="flex items-center gap-2">
         <ThemeToggle />
-        <a href="/contact" class="hidden md:inline-flex btn-primary text-sm">
+        <a href="/contact/" class="hidden md:inline-flex btn-primary text-sm">
           Schedule a Consultation
         </a>
         <button
@@ -82,7 +82,7 @@ const currentPath = Astro.url.pathname;
             {link.label}
           </a>
         ))}
-        <a href="/contact" class="btn-primary text-sm mt-2 text-center">
+        <a href="/contact/" class="btn-primary text-sm mt-2 text-center">
           Schedule a Consultation
         </a>
       </div>

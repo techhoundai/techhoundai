@@ -65,7 +65,7 @@ Here's what actually works for getting more reviews:
 
 **Ask consistently.** After every completed job or transaction, ask the customer to leave a review. Most people are happy to do it if you make it easy. Send them a direct link to your review page.
 
-**Respond to every review.** Good reviews, bad reviews, mediocre reviews. Responding shows that you're engaged and that you care about customer feedback. For negative reviews, be professional and offer to resolve the issue. Other potential customers are reading those responses. If you want to stay on top of reviews across platforms, we cover that in our guide on [monitoring what people say about your business online](/blog/how-to-monitor-what-people-say-about-your-business-online).
+**Respond to every review.** Good reviews, bad reviews, mediocre reviews. Responding shows that you're engaged and that you care about customer feedback. For negative reviews, be professional and offer to resolve the issue. Other potential customers are reading those responses. If you want to stay on top of reviews across platforms, we cover that in our guide on [monitoring what people say about your business online](/blog/how-to-monitor-what-people-say-about-your-business-online/).
 
 **Don't fake it.** Don't buy reviews. Don't have your employees write reviews. Don't offer incentives for reviews. Google is very good at detecting fake reviews, and the penalty for getting caught is severe.
 
@@ -83,6 +83,6 @@ This data tells you what's working and what needs attention. If you're getting l
 
 ## It's Worth the Effort
 
-Optimizing your Google Business Profile is one of the highest-return marketing activities a local business can do. It's free, it directly impacts whether customers find you, and most of your competitors aren't doing it well. It's also a critical piece of [AI Engine Optimization (AEO)](/blog/what-is-aeo-and-why-your-business-needs-it), since AI tools pull business data from your profile.
+Optimizing your Google Business Profile is one of the highest-return marketing activities a local business can do. It's free, it directly impacts whether customers find you, and most of your competitors aren't doing it well. It's also a critical piece of [AI Engine Optimization (AEO)](/blog/what-is-aeo-and-why-your-business-needs-it/), since AI tools pull business data from your profile.
 
-If you want help setting up or optimizing your profile, [get in touch](/contact). It's one of the services we offer at TechHound, and we can usually get it dialed in within a week.
+If you want help setting up or optimizing your profile, [get in touch](/contact/). It's one of the services we offer at TechHound, and we can usually get it dialed in within a week.

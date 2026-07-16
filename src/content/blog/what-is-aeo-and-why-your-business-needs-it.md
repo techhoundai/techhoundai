@@ -42,7 +42,7 @@ AI systems pull information from across the web to form their answers. The sourc
 
 - **Your website content**: Clear, well-structured information about what you do, where you operate, and who you serve.
 - **Reviews and testimonials**: What your customers say about you on Google, Yelp, and other platforms.
-- **[Structured data](/blog/what-is-structured-data-and-why-does-it-matter-for-seo)**: Technical markup on your website that helps AI understand your business details (location, services, hours, etc.).
+- **[Structured data](/blog/what-is-structured-data-and-why-does-it-matter-for-seo/)**: Technical markup on your website that helps AI understand your business details (location, services, hours, etc.).
 - **Industry authority**: Are you writing about your field? Do other sites link to you? AI systems weigh authority heavily.
 
 ## What Can You Do Today?
@@ -57,10 +57,10 @@ Here are a few concrete steps to start building your AEO presence:
 
 4. **Publish helpful content.** Blog posts, guides, and FAQs that answer real questions in your industry. The more helpful content you have, the more likely AI systems are to reference you.
 
-5. **Keep your business profiles updated.** [Google Business](/blog/a-practical-guide-to-google-business-profile-optimization), Yelp, LinkedIn, and industry directories should all have accurate, consistent information.
+5. **Keep your business profiles updated.** [Google Business](/blog/a-practical-guide-to-google-business-profile-optimization/), Yelp, LinkedIn, and industry directories should all have accurate, consistent information.
 
 ## This Isn't Going Away
 
 AI-driven search is growing fast. The businesses that start optimizing for it now will have a significant advantage over those who wait. Just like the early days of SEO, the first movers get the biggest benefit.
 
-If you want help getting your business ready for AI search, [reach out to us](/contact). We'll audit your current presence and build a plan to get you in front of the right people, whether they're searching on Google or asking an AI.
+If you want help getting your business ready for AI search, [reach out to us](/contact/). We'll audit your current presence and build a plan to get you in front of the right people, whether they're searching on Google or asking an AI.

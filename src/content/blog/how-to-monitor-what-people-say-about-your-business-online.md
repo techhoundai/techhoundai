@@ -29,7 +29,7 @@ The businesses that monitor their online presence consistently are the ones that
 
 Your business can be mentioned in more places than you might expect:
 
-**[Google Reviews](/blog/a-practical-guide-to-google-business-profile-optimization).** The most visible and often the most impactful. Most consumers check Google reviews before choosing a local business.
+**[Google Reviews](/blog/a-practical-guide-to-google-business-profile-optimization/).** The most visible and often the most impactful. Most consumers check Google reviews before choosing a local business.
 
 **Yelp.** Still significant for restaurants, home services, and healthcare businesses. Less relevant for B2B.
 
@@ -53,7 +53,7 @@ Automated monitoring solves this. There are tools and custom solutions that cont
 
 At the basic level, Google Alerts is free and will notify you when your business name appears in Google's index. It's a reasonable starting point, but it misses social media, forums, and many review platforms.
 
-For more comprehensive monitoring, you can use dedicated reputation management tools, or you can have a custom monitoring system built for your specific needs. We build these for clients at TechHound using [web scraping and data collection tools](/blog/how-web-scraping-powers-smarter-business-decisions) that cover the platforms and sources most relevant to their industry.
+For more comprehensive monitoring, you can use dedicated reputation management tools, or you can have a custom monitoring system built for your specific needs. We build these for clients at TechHound using [web scraping and data collection tools](/blog/how-web-scraping-powers-smarter-business-decisions/) that cover the platforms and sources most relevant to their industry.
 
 ## How to Respond
 
@@ -97,4 +97,4 @@ Most of your competitors aren't monitoring their online reputation systematicall
 
 A business that consistently monitors and manages its online presence builds trust faster, recovers from mistakes more gracefully, and catches opportunities that competitors miss entirely.
 
-If you want help setting up a monitoring system for your business, [let us know](/contact). We can build something tailored to the platforms and sources that matter most for your industry.
+If you want help setting up a monitoring system for your business, [let us know](/contact/). We can build something tailored to the platforms and sources that matter most for your industry.

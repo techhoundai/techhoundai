@@ -21,9 +21,9 @@ Here's the thing: the cost of not having a website isn't always visible. It's th
 
 When someone needs a service, the first thing they do is search for it. That behavior isn't new, but the degree to which it dominates has intensified. According to recent data, over 90% of consumers look online before choosing a local business. Not 90% of young people, or tech-savvy people, or people in certain industries. Ninety percent of everyone.
 
-If you don't have a website, you're invisible to those searches. You might show up on Google Maps if you have a [Google Business Profile](/blog/a-practical-guide-to-google-business-profile-optimization), but without a website backing it up, you're at a significant disadvantage compared to competitors who do.
+If you don't have a website, you're invisible to those searches. You might show up on Google Maps if you have a [Google Business Profile](/blog/a-practical-guide-to-google-business-profile-optimization/), but without a website backing it up, you're at a significant disadvantage compared to competitors who do.
 
-And it's not just Google anymore. People are asking AI tools like ChatGPT and Perplexity for recommendations. Those tools [pull information from websites](/blog/what-is-aeo-and-why-your-business-needs-it). If you don't have one, you can't be recommended.
+And it's not just Google anymore. People are asking AI tools like ChatGPT and Perplexity for recommendations. Those tools [pull information from websites](/blog/what-is-aeo-and-why-your-business-needs-it/). If you don't have one, you can't be recommended.
 
 ## A Social Media Page Is Not a Website
 
@@ -63,4 +63,4 @@ The technology has also gotten more accessible and affordable. A professional, c
 
 Operating without a website in 2026 is like operating without a phone number in 2006. You can technically do it, but you're making things unnecessarily difficult for yourself and leaving money on the table every single day.
 
-If you've been putting it off, now is a good time to stop. [Get in touch with us](/contact) and we'll walk you through what a basic site looks like, what it costs, and how fast we can get it live. You might be surprised at how simple it is.
+If you've been putting it off, now is a good time to stop. [Get in touch with us](/contact/) and we'll walk you through what a basic site looks like, what it costs, and how fast we can get it live. You might be surprised at how simple it is.

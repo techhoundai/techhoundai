@@ -43,7 +43,7 @@ Web scraping can pull review data from platforms like Yelp, Google, Amazon, or i
 
 ### Reputation Monitoring
 
-What are people saying about your business online? If you're only checking Google Reviews, you're missing a lot. Your business name might come up in forums, social media posts, local news articles, or industry directories. (For a deeper dive, see our guide on [how to monitor what people say about your business online](/blog/how-to-monitor-what-people-say-about-your-business-online).)
+What are people saying about your business online? If you're only checking Google Reviews, you're missing a lot. Your business name might come up in forums, social media posts, local news articles, or industry directories. (For a deeper dive, see our guide on [how to monitor what people say about your business online](/blog/how-to-monitor-what-people-say-about-your-business-online/).)
 
 A scraper can monitor all of those sources continuously and alert you when your business is mentioned. This lets you respond to negative feedback quickly, engage with positive mentions, and stay on top of your online reputation without spending hours searching manually.
 
@@ -70,6 +70,6 @@ The safest approach is to scrape public data at a reasonable rate, follow robots
 
 There are off-the-shelf scraping tools that work well for simple, common tasks. If you just need to pull product prices from a single competitor's website, a tool like Apify or ParseHub might be all you need.
 
-But for anything more complex, such as scraping multiple sources, handling pages that load dynamically with JavaScript, dealing with anti-bot measures, or processing the data into a usable format, a [custom-built solution](/blog/building-custom-software-vs-buying-off-the-shelf) is usually worth the investment. Off-the-shelf tools tend to break when websites change their structure, which happens constantly. A custom scraper built by someone who understands the target sites and your specific needs is much more reliable.
+But for anything more complex, such as scraping multiple sources, handling pages that load dynamically with JavaScript, dealing with anti-bot measures, or processing the data into a usable format, a [custom-built solution](/blog/building-custom-software-vs-buying-off-the-shelf/) is usually worth the investment. Off-the-shelf tools tend to break when websites change their structure, which happens constantly. A custom scraper built by someone who understands the target sites and your specific needs is much more reliable.
 
-At TechHound, web scraping and data collection are core parts of what we do. We build custom scrapers that feed lead generation pipelines, power competitive intelligence dashboards, and automate data collection that businesses used to do by hand. If you've got data locked up on the web that could be helping your business, [let's talk about it](/contact).
+At TechHound, web scraping and data collection are core parts of what we do. We build custom scrapers that feed lead generation pipelines, power competitive intelligence dashboards, and automate data collection that businesses used to do by hand. If you've got data locked up on the web that could be helping your business, [let's talk about it](/contact/).
