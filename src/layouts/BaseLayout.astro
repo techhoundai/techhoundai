@@ -47,8 +47,7 @@ const { title, description, image, type, article } = Astro.props;
     <SEO title={title} description={description} image={image} type={type} article={article} />
 
     <script is:inline>
-      const theme = localStorage.getItem("theme");
-      if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      if (localStorage.getItem("theme") === "dark") {
         document.documentElement.classList.add("dark");
       }
     </script>
