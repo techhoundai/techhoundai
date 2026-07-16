@@ -25,12 +25,6 @@ const canonicalURL = new URL(Astro.url.pathname, siteConfig.url);
 const imageURL = new URL(image, siteConfig.url);
 const fullTitle = title === "Home" ? `${siteConfig.name} | ${siteConfig.tagline}` : `${title} | ${siteConfig.name}`;
 
-import { services } from "../data/services";
-
-const serviceSlugNames: Record<string, string> = Object.fromEntries(
-  services.map((s) => [s.slug, s.title])
-);
-
 const segmentNames: Record<string, string> = {
   about: "About",
   services: "Services",
@@ -39,7 +33,6 @@ const segmentNames: Record<string, string> = {
   contact: "Contact",
   blog: "Blog",
   bothound: "BotHound",
-  ...serviceSlugNames,
 };
 
 const pathname = Astro.url.pathname.replace(/\/$/, "");

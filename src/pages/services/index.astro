@@ -24,15 +24,13 @@ import { siteConfig } from "../../data/siteConfig";
     <div class="container-default">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
-          <a href={`/services/${service.slug}/`} class="block">
-            <ServiceCard
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-              items={service.items}
-              headingLevel="h2"
-            />
-          </a>
+          <ServiceCard
+            title={service.title}
+            description={service.description}
+            icon={service.icon}
+            items={service.items}
+            headingLevel="h2"
+          />
         ))}
       </div>
     </div>
@@ -50,7 +48,6 @@ import { siteConfig } from "../../data/siteConfig";
         "@type": "Service",
         name: service.title,
         description: service.description,
-        url: `${siteConfig.url}/services/${service.slug}/`,
         provider: { "@id": `${siteConfig.url}/#organization` },
         areaServed: {
           "@type": "Country",
