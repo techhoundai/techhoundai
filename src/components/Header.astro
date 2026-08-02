@@ -49,7 +49,7 @@ const currentPath = Astro.url.pathname;
 
       <div class="flex items-center gap-2">
         <ThemeToggle />
-        <a href="https://portal.techhound.ai" class="hidden md:inline-flex btn-outline text-sm !px-4 !py-2">
+        <a href="https://portal.techhound.ai" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex btn-outline text-sm !px-4 !py-2">
           Client Portal
         </a>
         <a href="/contact/" class="hidden md:inline-flex btn-primary text-sm">
@@ -85,7 +85,7 @@ const currentPath = Astro.url.pathname;
             {link.label}
           </a>
         ))}
-        <a href="https://portal.techhound.ai" class="btn-outline text-sm mt-2 text-center">
+        <a href="https://portal.techhound.ai" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm mt-2 text-center">
           Client Portal
         </a>
         <a href="/contact/" class="btn-primary text-sm mt-2 text-center">
