@@ -21,14 +21,22 @@ import { projects, testimonials } from "../data/portfolio";
 
   <!-- Projects -->
   <section class="section-padding">
-    <div class="container-default">
+    <div class="container-default flex flex-col gap-8">
+      {projects.filter((p) => p.images.length > 0).map((project) => (
+        <PortfolioCard
+          title={project.title}
+          description={project.description}
+          url={project.url}
+          image={project.images[0]}
+          tags={project.tags}
+        />
+      ))}
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {projects.map((project) => (
+        {projects.filter((p) => p.images.length === 0).map((project) => (
           <PortfolioCard
             title={project.title}
             description={project.description}
             url={project.url}
-            image={project.images[0]}
             tags={project.tags}
           />
         ))}
