@@ -72,7 +72,7 @@ Off-the-shelf solutions work well for common use cases like customer support cha
 
 Custom-built agents take longer to develop and cost more initially, but they're tailored to your exact processes and integrate directly with your existing systems. For businesses with unique workflows or specific requirements, [custom is usually the better path](/blog/building-custom-software-vs-buying-off-the-shelf/).
 
-At TechHound, we build custom AI agents through our [BotHound](/bothound/) platform. We train them on your data, connect them to your tools, and deploy them in a way that fits how your team actually works. They can run in the cloud or on your own hardware, depending on your data sensitivity and infrastructure requirements.
+At TechHound, we build custom AI agents tailored to your business. We train them on your data, connect them to your tools, and deploy them in a way that fits how your team actually works. They can run in the cloud or on your own hardware, depending on your data sensitivity and infrastructure requirements.
 
 ## Getting Started
 

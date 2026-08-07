@@ -46,7 +46,7 @@ export const services: Service[] = [
     items: [
       "Custom agents trained on your business data",
       "Cloud-hosted and locally-hosted options",
-      "Built by the team behind BotHound",
+      "Proven results for real businesses",
     ],
   },
   {

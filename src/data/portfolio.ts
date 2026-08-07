@@ -26,13 +26,13 @@ export const projects: PortfolioProject[] = [
     tags: ["Web Design", "Development", "SEO"],
   },
   {
-    id: "bothound",
-    title: "BotHound",
+    id: "matchett-plumbing",
+    title: "Matchett Plumbing",
     description:
-      "AI-powered automation platform built by TechHound to help small businesses adopt AI into their workflows. Features a bot builder with multi-stage task pipelines, scheduled runs, and detailed run history.",
-    url: "https://bothound.ai",
-    images: ["/images/bothound1.png", "/images/bothound2.png"],
-    tags: ["Web App", "AI", "Automations", "Product"],
+      "AI-powered lead generation bot that scans Facebook, Reddit, Craigslist, Nextdoor, and other online forums for people asking about plumbing needs. Matchett Plumbing receives a daily email every morning with links to each post and a draft comment referring their services.",
+    url: "https://matchettplumbing.com",
+    images: [],
+    tags: ["AI", "Automations", "Lead Generation"],
   },
 ];
 

@@ -1,11 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { Image } from "astro:assets";
 import PortfolioCard from "../components/PortfolioCard.astro";
 import Testimonial from "../components/Testimonial.astro";
 import CTABanner from "../components/CTABanner.astro";
 import { projects, testimonials } from "../data/portfolio";
-import bothound1Image from "../assets/images/bothound1.png";
 ---
 
 <BaseLayout
@@ -34,34 +32,6 @@ import bothound1Image from "../assets/images/bothound1.png";
             tags={project.tags}
           />
         ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- BotHound Feature -->
-  <section class="section-padding bg-[#FAFAF8] dark:bg-[#111111]">
-    <div class="container-default">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <span class="text-sm font-medium text-gold dark:text-gold-light uppercase tracking-wide">Built by TechHound</span>
-          <h2 class="text-3xl sm:text-4xl font-heading font-bold mt-2 mb-4">Meet BotHound</h2>
-          <p class="text-secondary leading-relaxed mb-4">
-            BotHound is our AI-powered automation platform. It helps small businesses adopt AI into their daily workflows without needing a technical team.
-          </p>
-          <p class="text-secondary leading-relaxed mb-6">
-            Build multi-stage task pipelines, schedule automated runs, and track everything from a single dashboard. It's the kind of tool we build for our clients, now available to everyone.
-          </p>
-          <a href="/bothound/" class="btn-primary">Learn More About BotHound</a>
-        </div>
-        <div class="rounded-xl overflow-hidden shadow-lg border border-[#E8E4DC] dark:border-[#1E1E1E]">
-          <Image
-            src={bothound1Image}
-            alt="BotHound bot builder interface showing task pipelines and run history"
-            width={800}
-            class="w-full"
-            loading="lazy"
-          />
-        </div>
       </div>
     </div>
   </section>
