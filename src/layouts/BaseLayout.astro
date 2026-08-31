@@ -27,6 +27,14 @@ const { title, description, image, type, article } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
+    <script is:inline>
+      (function() {
+        const stored = localStorage.getItem("theme");
+        if (stored === "dark" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
     <!-- Google Analytics 4 -->
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8Z28PBH7G"></script>
@@ -38,19 +46,14 @@ const { title, description, image, type, article } = Astro.props;
     </script>
 
     <link rel="preconnect" href="https://api.web3forms.com" />
-    <meta name="theme-color" content="#C8A951" />
+    <meta name="theme-color" content="#050508" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="alternate" type="application/rss+xml" title="TechHound Blog" href="/rss.xml" />
     <SEO title={title} description={description} image={image} type={type} article={article} />
-
-    <script is:inline>
-      if (localStorage.getItem("theme") === "dark") {
-        document.documentElement.classList.add("dark");
-      }
-    </script>
 
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",

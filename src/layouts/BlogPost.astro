@@ -32,21 +32,22 @@ const canonicalURL = new URL(Astro.url.pathname, siteConfig.url).href;
 ---
 
 <BaseLayout title={title} description={description} type="article" article={articleMeta}>
-  <article class="section-padding">
+  <article class="section-padding pt-28">
     <div class="container-default max-w-3xl">
       <header class="mb-10">
-        <div class="flex items-center gap-3 text-sm text-secondary mb-4">
+        <div class="flex items-center gap-3 text-sm text-[#999] dark:text-[#555] mb-4 font-mono">
           <time datetime={date.toISOString()}>{formattedDate}</time>
+          <span class="text-gold/30">|</span>
           <span>by {author}</span>
-          {readingTime && <span>&middot; {readingTime} min read</span>}
+          {readingTime && <><span class="text-gold/30">|</span><span>{readingTime} min read</span></>}
         </div>
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold leading-tight mb-4">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-heading font-bold leading-tight mb-4 text-heading">
           {title}
         </h1>
         {tags && tags.length > 0 && (
           <div class="flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <span class="text-xs px-2 py-1 rounded-full bg-gold/10 text-gold dark:bg-gold-light/10 dark:text-gold-light font-medium">
+              <span class="text-[10px] px-2 py-1 rounded-sm bg-gold/10 text-gold border border-gold/20 font-medium uppercase tracking-wider">
                 {tag}
               </span>
             ))}
@@ -55,16 +56,21 @@ const canonicalURL = new URL(Astro.url.pathname, siteConfig.url).href;
       </header>
 
       <div class="prose prose-lg dark:prose-invert max-w-none
-        prose-headings:font-heading prose-headings:font-semibold
-        prose-a:text-gold dark:prose-a:text-gold-light prose-a:no-underline hover:prose-a:underline
-        prose-img:rounded-xl
-        prose-p:leading-relaxed prose-p:text-[#4A4A4A] dark:prose-p:text-[#C0C0C0]
-        prose-li:text-[#4A4A4A] dark:prose-li:text-[#C0C0C0]
-        prose-strong:text-[#1A1A1A] dark:prose-strong:text-[#F0F0F0]
-        prose-blockquote:border-gold dark:prose-blockquote:border-gold-light
-        prose-code:text-gold dark:prose-code:text-gold-light
+        prose-headings:font-heading prose-headings:font-semibold prose-headings:text-heading
+        prose-a:text-gold prose-a:no-underline hover:prose-a:underline
+        prose-img:rounded-sm prose-img:border prose-img:border-[#E8E4DC] dark:prose-img:border-border-dark
+        prose-p:leading-relaxed prose-p:text-[#444] dark:prose-p:text-[#999]
+        prose-li:text-[#444] dark:prose-li:text-[#999]
+        prose-strong:text-heading
+        prose-blockquote:border-gold
+        prose-code:text-gold
+        prose-hr:border-[#E8E4DC] dark:prose-hr:border-border-dark
       ">
         <slot />
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-[#E8E4DC] dark:border-border-dark text-center">
+        <a href="/blog/" class="btn-outline px-8 py-3">All Posts</a>
       </div>
     </div>
   </article>

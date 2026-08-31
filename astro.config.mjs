@@ -8,21 +8,22 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap({
+      filter(page) {
+        const excluded = ["/about/", "/services/", "/portfolio/", "/process/", "/contact/"];
+        return !excluded.some((path) => page.endsWith(path));
+      },
       serialize(item) {
         if (item.url === "https://techhound.ai/") {
           item.priority = 1.0;
           item.changefreq = "weekly";
-        } else if (item.url.includes("/blog/") && item.url !== "https://techhound.ai/blog/") {
-          item.priority = 0.7;
-          item.changefreq = "monthly";
         } else if (item.url === "https://techhound.ai/blog/") {
           item.priority = 0.8;
           item.changefreq = "weekly";
-        } else if (item.url.includes("/services")) {
-          item.priority = 0.9;
+        } else if (item.url.includes("/blog/")) {
+          item.priority = 0.7;
           item.changefreq = "monthly";
         } else {
-          item.priority = 0.6;
+          item.priority = 0.5;
           item.changefreq = "monthly";
         }
         return item;

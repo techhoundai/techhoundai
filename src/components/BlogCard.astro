@@ -19,20 +19,21 @@ const formattedDate = date.toLocaleDateString("en-US", {
 });
 ---
 
-<a href={`/blog/${slug}/`} class="card overflow-hidden group block hover:shadow-lg transition-all duration-300">
+<a href={`/blog/${slug}/`} class="card overflow-hidden group block hover:border-gold/30 transition-all duration-300">
   <div class="p-6">
-    <div class="flex items-center gap-3 text-xs text-secondary mb-3">
+    <div class="flex items-center gap-3 text-xs text-[#999] dark:text-[#555] mb-3 font-mono">
       <time datetime={date.toISOString()}>{formattedDate}</time>
+      {readingTime && <span class="text-gold/50">|</span>}
       {readingTime && <span>{readingTime}</span>}
     </div>
-    <Heading class="text-lg font-heading font-semibold mb-2 group-hover:text-gold transition-colors">
+    <Heading class="text-lg font-heading font-semibold mb-2 text-heading group-hover:text-gold transition-colors">
       {title}
     </Heading>
     <p class="text-secondary text-sm leading-relaxed">{description}</p>
     {tags && tags.length > 0 && (
       <div class="flex flex-wrap gap-2 mt-4">
         {tags.map((tag) => (
-          <span class="text-xs px-2 py-1 rounded-full bg-gold/10 text-gold dark:bg-gold/20 font-medium">
+          <span class="text-[10px] px-2 py-1 rounded-sm bg-gold/10 text-gold border border-gold/20 font-medium uppercase tracking-wider">
             {tag}
           </span>
         ))}

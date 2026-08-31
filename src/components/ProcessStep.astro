@@ -11,15 +11,15 @@ const { number, title, description, isLast = false } = Astro.props;
 
 <div class="flex gap-6">
   <div class="flex flex-col items-center">
-    <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center text-[#0A0A0A] font-bold text-lg flex-shrink-0">
-      {number}
+    <div class="w-12 h-12 rounded-sm bg-gold/10 border border-gold/30 flex items-center justify-center text-gold text-sm font-bold flex-shrink-0">
+      {String(number).padStart(2, "0")}
     </div>
     {!isLast && (
-      <div class="w-px h-full bg-gold/20 mt-2"></div>
+      <div class="w-px h-full bg-gold/15 mt-2"></div>
     )}
   </div>
   <div class={`pb-12 ${isLast ? 'pb-0' : ''}`}>
-    <h3 class="text-xl font-heading font-semibold mb-2">{title}</h3>
+    <h3 class="text-xl font-heading font-semibold mb-2 text-heading">{title}</h3>
     <p class="text-secondary leading-relaxed">{description}</p>
   </div>
 </div>

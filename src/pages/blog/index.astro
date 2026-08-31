@@ -17,37 +17,43 @@ function getReadingTime(text: string): string {
   title="Blog"
   description="Insights on web development, SEO, AI Engine Optimization, and building better software. From the TechHound team."
 >
-  <section class="px-4 py-10 md:py-14 sm:px-6 lg:px-8 bg-[#FAFAF8] dark:bg-[#111111]">
-    <div class="container-default text-center">
-      <h1 class="text-4xl sm:text-5xl font-heading font-bold mb-4">Blog</h1>
-      <p class="text-secondary text-lg max-w-2xl mx-auto">
-        Thoughts on software, business, and the changing tech landscape. Written by the TechHound team.
-      </p>
-    </div>
-  </section>
+  <div class="pt-20">
+    <section class="section-padding">
+      <div class="container-default">
+        <div class="text-center mb-16">
+          <p class="text-xs text-gold tracking-widest mb-4 uppercase font-semibold">All Posts</p>
+          <h1 class="text-4xl sm:text-5xl font-heading font-bold text-heading mb-6">Blog</h1>
+          <p class="text-secondary max-w-2xl mx-auto">
+            Thoughts on software, business, and the changing tech landscape. Written by the TechHound team.
+          </p>
+        </div>
 
-  <!-- Blog Posts -->
-  <section class="section-padding">
-    <div class="container-default">
-      {posts.length > 0 ? (
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {posts.map((post) => (
-            <BlogCard
-              title={post.data.title}
-              description={post.data.description}
-              date={post.data.date}
-              slug={post.id}
-              tags={post.data.tags}
-              headingLevel="h2"
-              readingTime={post.body ? getReadingTime(post.body) : undefined}
-            />
-          ))}
+        {posts.length > 0 ? (
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {posts.map((post) => (
+              <BlogCard
+                title={post.data.title}
+                description={post.data.description}
+                date={post.data.date}
+                slug={post.id}
+                tags={post.data.tags}
+                headingLevel="h2"
+                readingTime={post.body ? getReadingTime(post.body) : undefined}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="text-center py-16">
+            <p class="text-secondary text-lg">Posts coming soon.</p>
+          </div>
+        )}
+
+        <div class="text-center mt-12">
+          <a href="/" class="btn-outline px-8 py-4">
+            Back to Home
+          </a>
         </div>
-      ) : (
-        <div class="text-center py-16">
-          <p class="text-secondary text-lg">Posts coming soon. Check back shortly.</p>
-        </div>
-      )}
-    </div>
-  </section>
+      </div>
+    </section>
+  </div>
 </BaseLayout>

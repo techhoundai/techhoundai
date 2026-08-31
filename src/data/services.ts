@@ -72,37 +72,4 @@ export const services: Service[] = [
       "AEO (AI Engine Optimization) for AI-driven search",
     ],
   },
-  {
-    title: "Technical Platform Support",
-    description:
-      "Already using enterprise tools? We help you get more out of them. Setup, configuration, migration, and ongoing support.",
-    icon: "lucide:server",
-    items: [
-      "ServiceTitan, ServiceNow, Microsoft 365",
-      "Google Workspace, AWS, QuickBooks",
-      "Setup, configuration, and migration",
-    ],
-  },
-  {
-    title: "Brand & Business Services",
-    description:
-      "Your online presence matters. We help with brand design, business profiles, and making sure you look professional everywhere customers find you.",
-    icon: "lucide:palette",
-    items: [
-      "Logo and visual identity design",
-      "Google Business, Facebook, Yelp profile setup",
-      "Business profile optimization",
-    ],
-  },
-  {
-    title: "General Tech Support",
-    description:
-      "Not every problem needs a whole project. Sometimes you just need someone to call. We handle day-to-day tech issues, updates, and general tech support for businesses that don't want to hire a full-time team.",
-    icon: "lucide:headphones",
-    items: [
-      "Ongoing technical support",
-      "Security updates and monitoring",
-      "General tech management",
-    ],
-  },
 ];
