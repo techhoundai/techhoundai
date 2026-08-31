@@ -9,16 +9,19 @@ export default {
           DEFAULT: "#C8A951",
           light: "#D4B863",
           dark: "#A68A3E",
+          bright: "#FFD700",
           muted: "#C8A951/15",
         },
         surface: {
-          light: "#FAFAF8",
-          dark: "#111111",
+          light: "#F5F5F0",
+          dark: "#0D0D14",
+          darker: "#08080E",
         },
         border: {
-          light: "#E8E4DC",
-          dark: "#222222",
+          light: "#E0DCD0",
+          dark: "#1A1A28",
         },
+        void: "#050508",
       },
       fontFamily: {
         heading: ['"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],

@@ -2,45 +2,40 @@
 import ThemeToggle from "./ThemeToggle.astro";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about/", label: "About" },
-  { href: "/services/", label: "Services" },
-  { href: "/portfolio/", label: "Portfolio" },
-  { href: "/process/", label: "Process" },
-  { href: "/blog/", label: "Blog" },
-  { href: "/contact/", label: "Contact" },
+  { href: "#services", label: "Services" },
+  { href: "#about", label: "About" },
+  { href: "#process", label: "Process" },
+  { href: "#blog", label: "Blog" },
+  { href: "#contact", label: "Contact" },
 ];
 
 const currentPath = Astro.url.pathname;
+const isHome = currentPath === "/" || currentPath === "";
 ---
 
-<header class="sticky top-0 z-50 bg-white/95 dark:bg-[#0A0A0A]/95 backdrop-blur-md border-b border-[#E8E4DC] dark:border-[#1A1A1A]">
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 dark:bg-void/90 backdrop-blur-md border-b border-[#E8E4DC] dark:border-border-dark">
   <nav class="container-default px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16 md:h-20">
+    <div class="flex items-center justify-between h-14 md:h-16">
       <a href="/" class="flex-shrink-0 flex items-center gap-2">
         <img
           src="/images/logo-dark.png"
           alt="TechHound"
-          class="h-10 md:h-12 w-auto dark:hidden"
+          class="h-8 md:h-10 w-auto dark:hidden"
         />
         <img
           src="/images/logo-light.png"
           alt="TechHound"
-          class="h-10 md:h-12 w-auto hidden dark:block"
+          class="h-8 md:h-10 w-auto hidden dark:block"
         />
-        <span class="font-heading text-xl md:text-2xl font-bold tracking-tight text-gradient">TechHound</span>
+        <span class="text-sm md:text-base font-bold text-gold tracking-wider">TECHHOUND</span>
       </a>
 
       <div class="hidden lg:flex items-center gap-1">
         {navLinks.map((link) => (
           <a
-            href={link.href}
-            class:list={[
-              "px-3 py-2 text-sm font-medium rounded-lg transition-colors",
-              currentPath === link.href || (link.href !== "/" && currentPath.startsWith(link.href))
-                ? "text-gold dark:text-gold-light"
-                : "text-[#4A4A4A] dark:text-[#A0A0A0] hover:text-[#1A1A1A] dark:hover:text-[#F0F0F0]",
-            ]}
+            href={isHome ? link.href : `/${link.href}`}
+            class="nav-link px-3 py-2 text-xs font-medium uppercase tracking-widest transition-colors text-[#4A4A4A] dark:text-[#666] hover:text-gold dark:hover:text-gold"
+            data-section={link.href.replace("#", "")}
           >
             {link.label}
           </a>
@@ -49,16 +44,16 @@ const currentPath = Astro.url.pathname;
 
       <div class="flex items-center gap-2">
         <ThemeToggle />
-        <a href="https://portal.techhound.ai" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex btn-outline text-sm !px-4 !py-2">
-          Client Portal
+        <a href="https://portal.techhound.ai" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex btn-outline !text-xs !px-4 !py-2">
+          Portal
         </a>
-        <a href="/contact/" class="hidden md:inline-flex btn-primary text-sm">
-          Schedule a Consultation
+        <a href={isHome ? "#contact" : "/#contact"} class="hidden md:inline-flex btn-primary !text-xs !px-4 !py-2">
+          Get in Touch
         </a>
         <button
           id="mobile-menu-btn"
           type="button"
-          class="lg:hidden p-2 rounded-lg text-[#4A4A4A] dark:text-[#A0A0A0] hover:bg-surface-light dark:hover:bg-surface-dark transition-colors"
+          class="lg:hidden p-2 rounded-sm text-[#4A4A4A] dark:text-[#666] hover:text-gold transition-colors"
           aria-label="Open menu"
           aria-expanded="false"
         >
@@ -71,25 +66,21 @@ const currentPath = Astro.url.pathname;
     </div>
 
     <div id="mobile-menu" class="hidden lg:hidden pb-4">
-      <div class="flex flex-col gap-1">
+      <div class="flex flex-col gap-1 border-t border-[#E8E4DC] dark:border-border-dark pt-3">
         {navLinks.map((link) => (
           <a
-            href={link.href}
-            class:list={[
-              "px-3 py-2 text-sm font-medium rounded-lg transition-colors",
-              currentPath === link.href || (link.href !== "/" && currentPath.startsWith(link.href))
-                ? "text-gold dark:text-gold-light bg-surface-light dark:bg-surface-dark"
-                : "text-[#4A4A4A] dark:text-[#A0A0A0] hover:text-[#1A1A1A] dark:hover:text-[#F0F0F0] hover:bg-surface-light dark:hover:bg-surface-dark",
-            ]}
+            href={isHome ? link.href : `/${link.href}`}
+            class="nav-link px-3 py-2 text-xs font-medium uppercase tracking-widest transition-colors text-[#4A4A4A] dark:text-[#666] hover:text-gold dark:hover:text-gold"
+            data-section={link.href.replace("#", "")}
           >
             {link.label}
           </a>
         ))}
-        <a href="https://portal.techhound.ai" target="_blank" rel="noopener noreferrer" class="btn-outline text-sm mt-2 text-center">
-          Client Portal
+        <a href="https://portal.techhound.ai" target="_blank" rel="noopener noreferrer" class="btn-outline text-xs mt-2 text-center">
+          Portal
         </a>
-        <a href="/contact/" class="btn-primary text-sm mt-2 text-center">
-          Schedule a Consultation
+        <a href={isHome ? "#contact" : "/#contact"} class="btn-primary text-xs mt-2 text-center">
+          Get in Touch
         </a>
       </div>
     </div>
@@ -97,7 +88,7 @@ const currentPath = Astro.url.pathname;
 </header>
 
 <script>
-  function initMobileMenu() {
+  function initHeader() {
     const btn = document.getElementById("mobile-menu-btn");
     const menu = document.getElementById("mobile-menu");
     const openIcon = document.getElementById("menu-open-icon");
@@ -109,8 +100,40 @@ const currentPath = Astro.url.pathname;
       openIcon?.classList.toggle("hidden", isOpen);
       closeIcon?.classList.toggle("hidden", !isOpen);
     });
+
+    menu?.querySelectorAll("a[href^='#']").forEach((link) => {
+      link.addEventListener("click", () => {
+        menu.classList.add("hidden");
+        btn?.setAttribute("aria-expanded", "false");
+        openIcon?.classList.remove("hidden");
+        closeIcon?.classList.add("hidden");
+      });
+    });
+
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link[data-section]");
+
+    if (sections.length === 0 || navLinks.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            navLinks.forEach((link) => {
+              const isActive = link.getAttribute("data-section") === entry.target.id;
+              link.classList.toggle("text-gold", isActive);
+              link.classList.toggle("text-[#4A4A4A]", !isActive && !document.documentElement.classList.contains("dark"));
+              link.classList.toggle("text-[#666]", !isActive && document.documentElement.classList.contains("dark"));
+            });
+          }
+        });
+      },
+      { rootMargin: "-30% 0px -60% 0px" }
+    );
+
+    sections.forEach((section) => observer.observe(section));
   }
 
-  initMobileMenu();
-  document.addEventListener("astro:after-swap", initMobileMenu);
+  initHeader();
+  document.addEventListener("astro:after-swap", initHeader);
 </script>
