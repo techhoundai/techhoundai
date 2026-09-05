@@ -2,9 +2,10 @@
 import ThemeToggle from "./ThemeToggle.astro";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
+  { href: "#services", label: "What We Do" },
+  { href: "#results", label: "Results" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#about", label: "About" },
-  { href: "#process", label: "Process" },
   { href: "#blog", label: "Blog" },
   { href: "#contact", label: "Contact" },
 ];
@@ -48,7 +49,7 @@ const isHome = currentPath === "/" || currentPath === "";
           Portal
         </a>
         <a href={isHome ? "#contact" : "/#contact"} class="hidden md:inline-flex btn-primary !text-xs !px-4 !py-2">
-          Get in Touch
+          Free Quote
         </a>
         <button
           id="mobile-menu-btn"
@@ -80,7 +81,7 @@ const isHome = currentPath === "/" || currentPath === "";
           Portal
         </a>
         <a href={isHome ? "#contact" : "/#contact"} class="btn-primary text-xs mt-2 text-center">
-          Get in Touch
+          Free Quote
         </a>
       </div>
     </div>

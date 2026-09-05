@@ -37,6 +37,27 @@
   font-display: swap;
   src: url("/fonts/inter-800.woff2") format("woff2");
 }
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/barlow-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/barlow-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/barlow-800.woff2") format("woff2");
+}
 
 @layer base {
   html {
@@ -49,7 +70,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-family: "Barlow", "Inter", ui-sans-serif, system-ui, sans-serif;
     @apply font-bold;
   }
 }

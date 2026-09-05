@@ -24,7 +24,7 @@ export default {
         void: "#050508",
       },
       fontFamily: {
-        heading: ['"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
+        heading: ['"Barlow"', '"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
         body: ['"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
       },
     },
