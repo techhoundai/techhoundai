@@ -7,9 +7,10 @@ const currentPath = Astro.url.pathname;
 const isHome = currentPath === "/" || currentPath === "";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
+  { href: "#services", label: "What We Do" },
+  { href: "#results", label: "Results" },
+  { href: "#pricing", label: "Pricing" },
   { href: "#about", label: "About" },
-  { href: "#process", label: "Process" },
   { href: "/blog/", label: "Blog" },
   { href: "#contact", label: "Contact" },
 ];
@@ -84,7 +85,7 @@ const navLinks = [
 
       <div class="col-span-2 lg:col-span-1">
         <h3 class="text-xs text-gold uppercase tracking-wider mb-4 font-semibold">Work With Us</h3>
-        <p class="text-sm leading-relaxed mb-3">Remote & in-person meetings available.</p>
+        <p class="text-sm leading-relaxed mb-3">Websites, SEO, and automations for contractors.</p>
         <a href={isHome ? "#contact" : "/#contact"} class="btn-outline !text-xs !px-4 !py-2">Get in Touch</a>
       </div>
     </div>
@@ -94,7 +95,7 @@ const navLinks = [
         &copy; {currentYear} {siteConfig.name}. All rights reserved.
       </p>
       <p class="text-xs">
-        Based in Pittsburgh. Working everywhere.
+        Built for the trades. Based in Pittsburgh. Working everywhere.
       </p>
     </div>
   </div>

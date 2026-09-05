@@ -10,14 +10,14 @@ export const processSteps: ProcessStep[] = [
     number: 1,
     title: "Discovery Call",
     description:
-      "We learn about your business, goals, and technical needs. Free, no obligation. Just a conversation about what you're trying to accomplish.",
+      "We learn about your trade, your service area, and what's holding your business back. Free, no obligation. Just a conversation about how tech can help you get more jobs.",
     icon: "lucide:phone",
   },
   {
     number: 2,
     title: "Requirements & Proposal",
     description:
-      "We collaborate on detailed requirements and deliver a clear proposal outlining scope, timeline, and cost. No surprises.",
+      "We put together a clear proposal outlining exactly what we'll build, how long it'll take, and what it costs. No jargon, no surprises.",
     icon: "lucide:file-text",
   },
   {
@@ -31,14 +31,14 @@ export const processSteps: ProcessStep[] = [
     number: 4,
     title: "Build & Iterate",
     description:
-      "We build your solution and share progress early and often. Expect several rounds of review sessions and back-and-forth until you are completely satisfied with the end product. We don't consider it done until you do.",
+      "We build your solution and share progress early and often. You'll see your website or tool take shape in real time, and we don't consider it done until you do.",
     icon: "lucide:code",
   },
   {
     number: 5,
     title: "Launch & Support",
     description:
-      "We launch your project and work with you to put together an ongoing support plan that fits your needs. We don't disappear after delivery.",
+      "We launch your project and stick around. Ongoing maintenance, updates, and support so your tech keeps working as hard as you do.",
     icon: "lucide:rocket",
   },
 ];

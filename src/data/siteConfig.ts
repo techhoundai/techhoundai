@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "TechHound",
-  tagline: "Unleash Your Business",
+  tagline: "Built for the Trades",
   description:
-    "TechHound builds websites, AI agents, automations, and data tools for businesses. Based in Pittsburgh, working everywhere.",
+    "TechHound builds websites, automations, and marketing tools for trade businesses. Plumbers, electricians, HVAC techs, landscapers, roofers, and contractors. Based in Pittsburgh, working everywhere.",
   url: "https://techhound.ai",
   logo: "/images/logo-dark.png",
   email: "contact@techhound.ai",

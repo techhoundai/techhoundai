@@ -7,69 +7,80 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    title: "Web Development & Hosting",
+    title: "Job Photo Sync",
     description:
-      "We build everything from simple marketing sites to full web applications, and we host them too. If you need a website that looks good and actually works, we've got you.",
-    icon: "lucide:globe",
+      "Post a finished job photo to Instagram with a hashtag and it automatically appears on your website, Yelp page, and Google Business Profile. Works with any social platform.",
+    icon: "lucide:image",
     items: [
-      "Website design and development",
-      "Managed hosting and maintenance",
-      "Static and dynamic site solutions",
+      "Auto-sync to website, Yelp, and Google",
+      "Hashtag-based workflow from your phone",
+      "Keep your online presence fresh without extra work",
     ],
   },
   {
-    title: "Mobile App Development",
+    title: "Google Review Automation",
     description:
-      "Native and cross-platform mobile apps for iOS and Android. We take it from design through deployment and stick around for updates after launch.",
-    icon: "lucide:smartphone",
+      "Automated replies to your Google reviews using keywords that boost your local SEO rankings. Your reviews work harder for you while you focus on the next job.",
+    icon: "lucide:star",
     items: [
-      "iOS and Android app development",
-      "Ongoing mobile app maintenance",
+      "SEO-optimized auto-replies to reviews",
+      "Local keyword targeting in responses",
+      "Professional tone that builds trust",
     ],
   },
   {
-    title: "Business Process Automation",
+    title: "Automated Blog Posts",
     description:
-      "If you're doing the same thing over and over, there's probably a way to automate it. We build custom automations and connect your systems together, whether that's your CRM, payment platform, or internal tools.",
-    icon: "lucide:zap",
+      "We automatically generate and publish blog posts that establish you as the go-to contractor in your area for your trade. Build topical authority without writing a word.",
+    icon: "lucide:file-edit",
     items: [
-      "Custom workflow automations",
-      "System integrations across platforms",
-      "End-to-end process automation",
+      "Auto-published to your website",
+      "Targeted to your service area and trade",
+      "Builds topical authority for local search",
     ],
   },
   {
-    title: "Custom AI Agents",
+    title: "Lead Gen & Backlinking",
     description:
-      "We build AI agents that are trained on your data and actually get things done. They can run in the cloud or locally on your own machines, depending on what you need.",
-    icon: "lucide:bot",
-    items: [
-      "Custom agents trained on your business data",
-      "Cloud-hosted and locally-hosted options",
-      "Proven results for real businesses",
-    ],
-  },
-  {
-    title: "Lead Generation & Digital Monitoring",
-    description:
-      "We build web scraping and monitoring tools that find you leads, track what people are saying about your brand, and keep an eye on what your competitors are up to.",
+      "We scan Facebook, Nextdoor, Reddit, and Craigslist for people asking about your services and automatically recommend your business. Warm leads and backlinks delivered to you.",
     icon: "lucide:radar",
     items: [
-      "Automated lead generation",
-      "Online brand and reputation monitoring",
-      "Competitor monitoring and analysis",
-      "Custom web scraping solutions",
+      "Social media and forum monitoring",
+      "Auto-recommend your business in relevant threads",
+      "Daily lead reports to your inbox",
     ],
   },
   {
-    title: "SEO & AEO",
+    title: "Contractor Websites",
     description:
-      "We handle traditional SEO and the newer side of things, AI Engine Optimization. The goal is simple: make sure your business shows up when people search for what you do, whether they're using Google or an AI.",
-    icon: "lucide:search",
+      "Fast, mobile-first websites built to turn visitors into booked jobs. Click-to-call, online estimate forms, service pages that rank, and a project gallery that updates itself.",
+    icon: "lucide:globe",
     items: [
-      "Traditional SEO (keywords, technical SEO, backlinking)",
-      "Content generation (blogs, social media)",
-      "AEO (AI Engine Optimization) for AI-driven search",
+      "Custom design for your trade",
+      "Online estimate and booking forms",
+      "Auto-syncing project gallery",
+    ],
+  },
+  {
+    title: "Missed Call Texts & Automations",
+    description:
+      "Miss a call on the job? We text them back automatically. We also integrate with FieldPulse, Jobber, ServiceTitan, and Housecall Pro to send seasonal promos to your customer list.",
+    icon: "lucide:zap",
+    items: [
+      "Automated texts to missed calls",
+      "FieldPulse, Jobber, ServiceTitan integrations",
+      "Seasonal email campaigns from your customer list",
+    ],
+  },
+  {
+    title: "Custom Tech Solutions",
+    description:
+      "CRM, scheduling, dispatching, or something else entirely. If technology can make your operation run smoother, we can build it.",
+    icon: "lucide:wrench",
+    items: [
+      "Custom CRM and job management tools",
+      "Scheduling and dispatching systems",
+      "Platform integrations and data tools",
     ],
   },
 ];

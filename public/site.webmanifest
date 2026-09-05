@@ -1,7 +1,7 @@
 {
   "name": "TechHound",
   "short_name": "TechHound",
-  "description": "TechHound builds websites, AI agents, automations, and data tools for businesses.",
+  "description": "Websites, automations, and marketing tools for trade businesses. Plumbers, electricians, HVAC techs, landscapers, roofers, and contractors.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#050508",
